@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.comment="The context seen by machines which send and receive messages" org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.carrierSet name="'" org.eventb.core.comment="A Boolean Set. Contains 'true' and 'false'&#9;" org.eventb.core.identifier="Boolean"/>
+<org.eventb.core.axiom name="(" org.eventb.core.comment="Definition of Boolean" org.eventb.core.label="axm1" org.eventb.core.predicate="Boolean={t,f}"/>
+<org.eventb.core.axiom name=")" org.eventb.core.comment="Definition of Boolean" org.eventb.core.label="axm2" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.constant name="+" org.eventb.core.comment="True" org.eventb.core.identifier="t"/>
+<org.eventb.core.constant name="*" org.eventb.core.comment="False" org.eventb.core.identifier="f"/>
+<org.eventb.core.carrierSet name="," org.eventb.core.comment="The values which the Data Channel can take" org.eventb.core.identifier="DataSet"/>
+<org.eventb.core.constant name="." org.eventb.core.comment="Message saying 'fail'" org.eventb.core.identifier="fail"/>
+<org.eventb.core.constant name="0" org.eventb.core.comment="Data channel is empty" org.eventb.core.identifier="invalid"/>
+<org.eventb.core.constant name="7" org.eventb.core.comment="Message saying 'succeed'" org.eventb.core.identifier="succeed"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="axm3" org.eventb.core.predicate="fail∈DataSet"/>
+<org.eventb.core.axiom name="8" org.eventb.core.label="axm10" org.eventb.core.predicate="succeed∈DataSet"/>
+<org.eventb.core.axiom name="2" org.eventb.core.label="axm5" org.eventb.core.predicate="invalid∈DataSet"/>
+<org.eventb.core.constant name="=" org.eventb.core.comment="Message saying 'go to last_prop state'" org.eventb.core.identifier="last_proposal"/>
+<org.eventb.core.axiom name="&gt;" org.eventb.core.label="axm14" org.eventb.core.predicate="last_proposal∈DataSet"/>
+<org.eventb.core.constant name="C" org.eventb.core.comment="Message saying 'go to free_game state'" org.eventb.core.identifier="begin"/>
+<org.eventb.core.axiom name="D" org.eventb.core.label="axm19" org.eventb.core.predicate="begin∈DataSet"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="axm7" org.eventb.core.predicate="fail≠invalid"/>
+<org.eventb.core.axiom name="9" org.eventb.core.label="axm11" org.eventb.core.predicate="succeed≠invalid"/>
+<org.eventb.core.axiom name=";" org.eventb.core.label="axm13" org.eventb.core.predicate="succeed≠fail"/>
+<org.eventb.core.axiom name="?" org.eventb.core.label="axm15" org.eventb.core.predicate="last_proposal≠fail"/>
+<org.eventb.core.axiom name="A" org.eventb.core.label="axm17" org.eventb.core.predicate="last_proposal≠invalid"/>
+<org.eventb.core.axiom name="B" org.eventb.core.label="axm18" org.eventb.core.predicate="last_proposal≠succeed"/>
+<org.eventb.core.axiom name="E" org.eventb.core.label="axm20" org.eventb.core.predicate="begin≠fail"/>
+<org.eventb.core.axiom name="F" org.eventb.core.label="axm21" org.eventb.core.predicate="begin≠invalid"/>
+<org.eventb.core.axiom name="G" org.eventb.core.label="axm22" org.eventb.core.predicate="begin≠succeed"/>
+<org.eventb.core.axiom name="H" org.eventb.core.label="axm23" org.eventb.core.predicate="begin≠last_proposal"/>
+<org.eventb.core.axiom name="6" org.eventb.core.comment="The Dataset contains some valid things" org.eventb.core.label="axm9" org.eventb.core.predicate="DataSet ∖ {invalid}≠∅"/>
+<org.eventb.core.constant name="K" org.eventb.core.comment="This is the subset of DataSet that consists of all messages except control messages" org.eventb.core.identifier="DataDataSet"/>
+<org.eventb.core.axiom name="L" org.eventb.core.comment="Definition of DataDataSet" org.eventb.core.label="axm24" org.eventb.core.predicate="DataDataSet⊆DataSet"/>
+<org.eventb.core.axiom name="M" org.eventb.core.comment="Definition of DataDataSet" org.eventb.core.label="axm25" org.eventb.core.predicate="DataDataSet=DataSet∖{fail,succeed,invalid,last_proposal,begin}"/>
+<org.eventb.core.axiom name="N" org.eventb.core.comment="There exist messages other than control messages" org.eventb.core.label="axm26" org.eventb.core.predicate="DataDataSet≠∅"/>
+</org.eventb.core.contextFile>

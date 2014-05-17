@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="17">
+<org.eventb.core.poIdentifier name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+<org.eventb.core.poIdentifier name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.poIdentifier name="DataDataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.poIdentifier name="begin" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.poIdentifier name="fail" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="invalid" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="last_proposal" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="succeed" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAck context.bpo|org.eventb.core.poFile#SendAck context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="20">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Boolean={t,f}" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="t≠f" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="fail∈DataSet" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="succeed∈DataSet" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#8"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="invalid∈DataSet" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="last_proposal∈DataSet" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#&gt;"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="begin∈DataSet" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#D"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="fail≠invalid" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="succeed≠invalid" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#9"/>
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="succeed≠fail" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#;"/>
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="last_proposal≠fail" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#?"/>
+<org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="last_proposal≠invalid" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#A"/>
+<org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="last_proposal≠succeed" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#B"/>
+<org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="begin≠fail" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#E"/>
+<org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="begin≠invalid" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#F"/>
+<org.eventb.core.poPredicate name="PRD15" org.eventb.core.predicate="begin≠succeed" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#G"/>
+<org.eventb.core.poPredicate name="PRD16" org.eventb.core.predicate="begin≠last_proposal" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#H"/>
+<org.eventb.core.poPredicate name="PRD17" org.eventb.core.predicate="DataSet ∖ {invalid}≠(∅ ⦂ ℙ(DataSet))" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#6"/>
+<org.eventb.core.poPredicate name="PRD18" org.eventb.core.predicate="DataDataSet⊆DataSet" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#L"/>
+<org.eventb.core.poPredicate name="PRD19" org.eventb.core.predicate="DataDataSet=DataSet ∖ {fail,succeed,invalid,last_proposal,begin}" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#M"/>
+<org.eventb.core.poPredicate name="PRD20" org.eventb.core.predicate="DataDataSet≠(∅ ⦂ ℙ(DataSet))" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#N"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

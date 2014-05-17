@@ -1,0 +1,106 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[top=3cm, bottom=2.5cm, left=3cm, right=2.5cm] {geometry}
+\usepackage {bsymb,b2latex}
+\usepackage{fancyhdr,lastpage,color}
+\lhead{\rm An Event-B Specification of SendAndAck}
+\rhead {\rm Page \thepage~of \pageref{LastPage}}
+\lfoot{}\cfoot{}\rfoot{}
+\pagestyle{fancy}
+%---------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+\begin{description}
+\BTitle{SendAndAck}{11 Apr 2011}{08:17:13 PM}
+\MACHINE{SendAndAck}
+\cmt{ Abstract model for sending a message and receiving an Ack }
+\SEES{SendAck~context}
+\VARIABLES
+	\begin{description}
+		\Item{ SenderWaitingForACK }
+		\bcmt{ State of Sender }
+		\Item{ SendMsgNo }
+		\bcmt{ Message Number seen by sender(not really required) }
+		\Item{ RecvMsgNo }
+		\bcmt{ Message Number seen by receiver(not really required) }
+		\Item{ Valid }
+		\bcmt{ Whether Data is valid or not }
+		\Item{ Ack }
+		\bcmt{ The Ack Channel }
+	\end{description}
+\INVARIANTS
+	\begin{description}
+		\nItemX{ inv7 }{ Valid\in Boolean }
+		\nItemX{ inv6 }{ Ack\in Boolean }
+		\nItemX{ inv1 }{ SenderWaitingForACK\in Boolean }
+		\nItemX{ inv3 }{ SendMsgNo\in \nat }
+		\nItemX{ inv4 }{ RecvMsgNo\in \nat }
+		\nItemX{ inv5 }{ SendMsgNo=RecvMsgNo \lor  SendMsgNo=RecvMsgNo+1 }
+		\nItemX{ inv8 }{ SenderWaitingForACK=f \limp  Ack=f }
+		\nItemX{ inv9 }{ Valid=t\limp SenderWaitingForACK=t }
+		\nItemX{ inv10 }{ Ack=t\limp Valid=f }
+		\nItemX{ inv12 }{ Valid=t \land  Ack=f \limp  SendMsgNo=RecvMsgNo+1 }
+		\nItemX{ inv13 }{ Valid=t \land  Ack=t \limp  SendMsgNo=RecvMsgNo }
+		\nItemX{ inv14 }{ Valid=f \limp  SendMsgNo=RecvMsgNo }
+	\end{description}
+\EVENTS
+	\INITIALISATION
+		\begin{description}
+		\BeginAct
+			\begin{description}
+			\nItemX{ act1 }{ SenderWaitingForACK:= f }
+			\nItemX{ act2 }{ SendMsgNo:= 0 }
+			\nItemX{ act3 }{ RecvMsgNo:= 0 }
+			\nItemX{ act4 }{ Valid:= f }
+			\nItemX{ act5 }{ Ack:= f }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {SenderSend}
+	\cmt{ Sender Sends Data }
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ SenderWaitingForACK=f }
+			\nItemX{ grd2 }{ Valid=f }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ SenderWaitingForACK:= t }
+			\nItemX{ act2 }{ Valid:= t }
+			\nItemX{ act3 }{ SendMsgNo:= SendMsgNo+1 }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {ReceiverReceive}
+	\cmt{ Receiver gets Data and sends ack }
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ Valid=t }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ Valid:= f }
+			\nItemX{ act2 }{ Ack:= t }
+			\nItemX{ act3 }{ RecvMsgNo:= RecvMsgNo+1 }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {SenderGetACK}
+	\cmt{ Receiver gets the Ack }
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ SenderWaitingForACK=t }
+			\nItemX{ grd2 }{ Ack=t }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ Ack:= f }
+			\nItemX{ act2 }{ SenderWaitingForACK:= f }
+			\end{description}
+		\EndAct
+		\end{description}
+\END
+\end{description}
+\end{document}

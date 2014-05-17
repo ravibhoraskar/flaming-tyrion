@@ -1,0 +1,185 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[top=3cm, bottom=2.5cm, left=3cm, right=2.5cm] {geometry}
+\usepackage {bsymb,b2latex}
+\usepackage{fancyhdr,lastpage,color}
+\lhead{\rm An Event-B Specification of m01~Convergence~of~Buyer~Events}
+\rhead {\rm Page \thepage~of \pageref{LastPage}}
+\lfoot{}\cfoot{}\rfoot{}
+\pagestyle{fancy}
+%---------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+\begin{description}
+\BTitle{m01~Convergence~of~Buyer~Events}{11 Apr 2011}{08:17:20 PM}
+\MACHINE{m01~Convergence~of~Buyer~Events}
+\REFINES{m00~States~and~Transitions}
+\SEES{Context\_0}
+\VARIABLES
+	\begin{description}
+		\Item{ buy\_state }
+		\bcmt{ Sender's state }
+		\Item{ sell\_state }
+		\bcmt{ Receiver's state }
+		\Item{ buyer\_variant }
+		\bcmt{ This is a number that is the variant for the state that the machine is in. The value set by the event is determined by a topological sort on the FSM }
+	\end{description}
+\INVARIANTS
+	\begin{description}
+		\nItemX{ inv1 }{ buyer\_variant\in \nat }
+		\cmt{ The variant is a natural number. }
+		\nItemX{ inv2 }{ buy\_state=init\limp buyer\_variant=5 }
+		\nItemX{ inv3 }{ buy\_state=free\_game\limp buyer\_variant=4 }
+		\nItemX{ inv4 }{ buy\_state=last\_prop\limp buyer\_variant=3 }
+		\nItemX{ inv5 }{ buy\_state=success\limp buyer\_variant=2 }
+		\nItemX{ inv6 }{ buy\_state=failure\limp buyer\_variant=1 }
+	\end{description}
+\EVENTS
+	\INITIALISATION
+		\\\textit{extended}
+		\begin{description}
+		\BeginAct
+			\begin{description}
+			\nItem{ act1 }{ buy\_state:= init }
+			\nItem{ act2 }{ sell\_state:= init }
+			\nItemX{ act3 }{ buyer\_variant:= 5 }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Done}
+	\cmt{ This is the event that is called when the protocol finishes }
+	\EXTD {Done}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state\in \{ success,failure\}  }
+			\nItem{ grd2 }{ sell\_state\in \{ success,failure\}  }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\Item{ skip }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Begin}
+		\Status{convergent}
+	\EXTD {Buyer\_Begin}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state=init }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ buy\_state:= free\_game }
+			\nItemX{ act2 }{ buyer\_variant:= 4 }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Begin}
+		\Status{anticipated}
+	\EXTD {Seller\_Begin}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ sell\_state=init }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ sell\_state:= free\_game }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Fail}
+		\Status{convergent}
+	\EXTD {Buyer\_Fail}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state\in \{ init,free\_game,last\_prop\} 	 }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ buy\_state:= failure }
+			\nItemX{ act2 }{ buyer\_variant:= 1 }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Fail}
+		\Status{anticipated}
+	\EXTD {Seller\_Fail}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ sell\_state\in \{ init,free\_game,last\_prop\}  }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ sell\_state:= failure }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Lastprop}
+		\Status{convergent}
+	\EXTD {Buyer\_Lastprop}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state=free\_game }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ buy\_state:= last\_prop }
+			\nItemX{ act2 }{ buyer\_variant:= 3 }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Lastprop}
+		\Status{anticipated}
+	\EXTD {Seller\_Lastprop}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ sell\_state=free\_game }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ sell\_state:= last\_prop }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Succeed}
+		\Status{convergent}
+	\EXTD {Buyer\_Succeed}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state=last\_prop }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ buy\_state:= success }
+			\nItemX{ act2 }{ buyer\_variant:= 2 }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Succeed}
+		\Status{anticipated}
+	\EXTD {Seller\_Succeed}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ sell\_state=last\_prop }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ sell\_state:= success }
+			\end{description}
+		\EndAct
+		\end{description}
+\VARIANT
+	\begin{description}
+	\Item{ buyer\_variant }
+	\end{description}
+\END
+\end{description}
+\end{document}

@@ -1,0 +1,46 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[top=3cm, bottom=2.5cm, left=3cm, right=2.5cm] {geometry}
+\usepackage {bsymb,b2latex}
+\usepackage{fancyhdr,lastpage,color}
+\lhead{\rm An Event-B Specification of Context\_0}
+\rhead {\rm Page \thepage~of \pageref{LastPage}}
+\lfoot{}\cfoot{}\rfoot{}
+\pagestyle{fancy}
+%---------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+\begin{description}
+\BTitle{Context\_0}{11 Apr 2011}{08:16:56 PM}
+\CONTEXT{Context\_0}
+\cmt{ Constext seen by the Bussiness Protocol }
+\SETS
+	\begin{description}
+		\Item{ STATUS }
+		\bcmt{ The state that the protocol can be in }
+	\end{description}
+\CONSTANTS
+	\begin{description}
+		\Item{ init }
+		\Item{ free\_game }
+		\Item{ last\_prop }
+		\Item{ success }
+		\Item{ failure }
+	\end{description}
+\AXIOMS
+	\begin{description}
+		\nItemX{ axm1 }{ STATUS=\{ init,free\_game,last\_prop,success,failure\}  }
+		\cmt{ The various states which the protocol can be in }
+		\nItemX{ axm2 }{ init \neq  free\_game }
+		\nItemX{ axm3 }{ init \neq  last\_prop }
+		\nItemX{ axm4 }{ init \neq  success }
+		\nItemX{ axm5 }{ free\_game\neq last\_prop }
+		\nItemX{ axm6 }{ free\_game\neq success }
+		\nItemX{ axm7 }{ last\_prop\neq success }
+		\nItemX{ axm8 }{ failure\neq init }
+		\nItemX{ axm9 }{ failure\neq free\_game }
+		\nItemX{ axm10 }{ failure\neq last\_prop }
+		\nItemX{ axm11 }{ failure\neq success }
+	\end{description}
+\END
+\end{description}
+\end{document}

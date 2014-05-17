@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.comment="Ideally this should refine the other SendAndAck machines. We get rid of the valid channel" org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="Data≔invalid" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="SenderWaitingForACK≔f" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Ack≔f" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="SendAck context"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="SenderWaitingForACK"/>
+<org.eventb.core.variable name="," org.eventb.core.identifier="Data"/>
+<org.eventb.core.invariant name=";" org.eventb.core.label="inv11" org.eventb.core.predicate="Ack∈Boolean"/>
+<org.eventb.core.invariant name="-" org.eventb.core.label="inv1" org.eventb.core.predicate="SenderWaitingForACK∈Boolean"/>
+<org.eventb.core.invariant name="." org.eventb.core.label="inv2" org.eventb.core.predicate="Data∈DataSet"/>
+<org.eventb.core.invariant name="2" org.eventb.core.comment="Ack may be true only when sender is waiting for it" org.eventb.core.label="inv6" org.eventb.core.predicate="SenderWaitingForACK=f ⇒ Ack=f"/>
+<org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SenderSend">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="SenderWaitingForACK=f"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data=invalid"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="SenderWaitingForACK≔t" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Data:∈DataSet∖{invalid}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ReceiverReceive">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Data∈DataSet∖{invalid}"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Ack≔t" org.eventb.core.label="act3"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="Ack=f"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SenderGetAck">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data≠invalid"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Data≔invalid" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="SenderWaitingForACK≔f" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="Ack≔f" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name=":" org.eventb.core.identifier="Ack"/>
+<org.eventb.core.invariant name="&gt;" org.eventb.core.comment="Ack may not be sent unnecessarily" org.eventb.core.label="inv13" org.eventb.core.predicate="Ack=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.invariant name="3" org.eventb.core.comment="Once Sender has received ack, it sets the data to invalid" org.eventb.core.label="inv7" org.eventb.core.predicate="Data≠invalid ⇒SenderWaitingForACK=t"/>
+<org.eventb.core.invariant name="=" org.eventb.core.comment="Sender cannot wait for an ack of invalid Data" org.eventb.core.label="inv12" org.eventb.core.predicate="Data=invalid⇒SenderWaitingForACK=f"/>
+</org.eventb.core.machineFile>

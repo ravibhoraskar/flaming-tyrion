@@ -1,0 +1,786 @@
+% Bibliography file for the references used in the qods.tex
+
+% TelegraphCQ
+@inproceedings{ Chandrasekaran:TelegraphCQ,
+  author =	 "Sirish Chandrasekaran and et al.",
+  title =	 "Telegraph{CQ}: Continuous Dataflow Processing for an
+                  Uncertain World",
+  booktitle =	 "Proceedings of CIDR",
+  year =	 "2003",
+}
+
+% Aurora
+@TechReport{Carney:Aurora,
+  author =	 "Don Carney and et al.",
+  title =	 "Monitoring Streams - {A} New Class of Data
+                  Management Applications",
+  institution =	 "Department of Computer Science, Brown University",
+  number =	 "CS-02-04",
+  month =	 Feb,
+  year =	 "2002"
+}
+
+@TechReport{CQL:CQL2003,
+  author =	 "Arvind Arasu, Shivnath Babu, Jennifer Widom",
+  title =	 "The CQL Continuous Query Language: Semantic Foundations and Query Execution",
+  institution =	 "Department of Computer Science, Stanford University",
+  month =	 Oct,
+  year =	 "2003"
+}
+
+% STREAM
+@inproceedings{Motwani:Stream,
+  author =	 "Rajeev Motwani and et al.",
+  title =	 "Query Processing, Resource Management, and
+                  Approximation in a Data Stream Management System",
+  booktitle =	 "Proceedings of CIDR",
+  year =	 "2003",
+}
+
+% NiagaraCQ
+@inproceedings{Chen:NiagaraCQ,
+  author =	 "Jianjun Chen and David J. DeWitt and Feng Tian and
+                  Yuan Wang",
+  title =	 "{NiagaraCQ}: a scalable continuous query system for
+                  {Internet} databases",
+  booktitle =	 "Proceedings of ACM SIGMOD",
+  pages =	 "379-390",
+  year =	 "2000"
+}
+
+% Tribeca
+@inproceedings{ Sullivan:Tribeca,
+  author =	 "Mark Sullivan and Andrew Heybey",
+  title =	 "Tribeca: {A} System for Managing Large Databases of
+                  Network Traffic",
+  booktitle =	 "Proceedings of USENIX Annual Technical Conference",
+  year =	 "1998",
+  pages =	 "13-24"
+}
+
+% Fjord
+@inproceedings{ Madden:Fjord,
+  author =	 "Sam Madden and Michael J. Franklin",
+  title =	 "Fjording the Stream: An Architecture for Queries
+                  Over Streaming Sensor Data",
+  booktitle =	 "Proceedings of ICDE",
+  year =	 "2002",
+  url =		 "citeseer.nj.nec.com/madden02fjording.html"
+}
+
+% Sequence
+@inproceedings{ Seshadri:Sequence,
+  author =	 "Praveen Seshadri and Miron Livny and Raghu
+                  Ramakrishnan",
+  title =	 "Sequence query processing",
+  booktitle =	 "Proceedings of ACM SIGMOD",
+  pages =	 "430--441",
+  year =	 "1994",
+  url =		 "citeseer.nj.nec.com/seshadri94sequence.html"
+}
+
+% Approximate Query Processing
+@inproceedings{ Chandrasekaran:VLDB02,
+  author =	 "S. Chandrasekaran and M. Franklin",
+  title =	 "Streaming Queries over Streaming Data",
+  booktitle =	 "Proceedings of VLDB",
+  year =	 "2002",
+  url =		 "citeseer.nj.nec.com/chandrasekaran02streaming.html"
+}
+
+@inproceedings{ Dobra:SIGMOD02,
+  author =	 "Alin Dobra and Minos N. Garofalakis and Johannes
+                  Gehrke and Rajeev Rastogi",
+  title =	 "Processing Complex Aggregate Queries over Data
+                  Streams",
+  booktitle =	 "Proceedings of ACM SIGMOD",
+  year =	 "2002",
+  url =		 "citeseer.nj.nec.com/dobra02processing.html"
+}
+
+@inproceedings{ Das:SIGMOD03,
+  author =	 "Abhinandan Das and Johannes Gehrke and Mirek
+                  Riedewald",
+  title =	 "Approximate Join Processing Over Data Streams",
+  booktitle =	 "Proceedings of ACM SIGMOD",
+  year =	 "2003",
+  url =		 "citeseer.nj.nec.com/564421.html"
+}
+
+@inproceedings{Haas:SIGMOD99,
+  author =	 {Peter J. Haas and Joseph M. Hellerstein},
+  title =	 {Ripple Joins for Online Aggregation},
+  booktitle =	 {Proceedings of SIGMOD},
+  publisher =	 {ACM Press},
+  year =	 {1999},
+  isbn =	 {1-58113-084-8},
+  pages =	 {287-298},
+}
+
+}
+@inproceedings{Chaudhari:SIGMOD01,
+  author =	 {Surajit Chaudhuri and Gautam Das and Vivek
+                  Narasayya},
+  title =	 {A robust, optimization-based approach for
+                  approximate answering of aggregate queries},
+  booktitle =	 {Proceedings of SIGMOD},
+  year =	 {2001},
+  isbn =	 {1-58113-332-4},
+  pages =	 {295--306},
+  location =	 {Santa Barbara, California, United States},
+  doi =		 {http://doi.acm.org/10.1145/375663.375694},
+  publisher =	 {ACM Press}
+}
+
+@inproceedings{Gehrke:SIGMOD01,
+  author =	 {Johannes Gehrke and Flip Korn and Divesh Srivastava},
+  title =	 {On computing correlated aggregates over continual
+                  data streams},
+  booktitle =	 {Proceedings of SIGMOD},
+  year =	 {2001},
+  isbn =	 {1-58113-332-4},
+  pages =	 {13--24},
+  location =	 {Santa Barbara, California, United States},
+  publisher =	 {ACM Press},
+}
+
+% Adaptive Query Processing, Load Shedding, Operator Scheduling
+@inproceedings{ Mhammad:VLDB03,
+  author =	 "Moustafa Hammad Mhammad",
+  title =	 "Scheduling for shared window joins over data
+                  streams",
+  booktitle =	 {Proceedings of VLDB},
+  publisher =	 {Morgan Kaufmann},
+  year =	 {2003},
+  url =		 "citeseer.nj.nec.com/590715.html"
+}
+
+@inproceedings{Olston:SIGMOD03,
+  author =	 {Chris Olston and Jing Jiang and Jennifer Widom},
+  title =	 {Adaptive filters for continuous queries over
+                  distributed data streams},
+  booktitle =	 {Proceedings of ACM SIGMOD},
+  year =	 {2003},
+  isbn =	 {1-58113-634-X},
+  pages =	 {563--574},
+  location =	 {San Diego, California},
+  publisher =	 {ACM Press}
+}
+
+@inproceedings{Tatbul:VLDB03,
+  author =	 {N. Tatbul and U. Cetintemel and S. Zdonik and
+                  M. Chemiack and M. Stonebraker},
+  title =	 {Load Shedding in a Data Stream Manager},
+  booktitle =	 {Proceedings of VLDB},
+  year =	 {2003},
+  location =	 {Berlin, Germany}
+}
+
+@inproceedings{ Madden:SIGMOD02,
+  author =	 "Sam Madden and Mehul A. Shah and Joseph
+                  M. Hellerstein and Vijayshankar Raman",
+  title =	 "Continuously Adaptive Continuous Queries over
+                  Streams",
+  booktitle =	 "Proceedings of SIGMOD",
+  year =	 "2002",
+  url =		 "citeseer.nj.nec.com/madden02continuously.html"
+}
+
+@inproceedings{Babcock:SIGMOD03,
+  author =	 {Brian Babcock and Shivnath Babu and Rajeev Motwani
+                  and Mayur Datar},
+  title =	 {Chain: operator scheduling for memory minimization
+                  in data stream systems},
+  booktitle =	 {Proceedings of ACM SIGMOD},
+  year =	 {2003},
+  isbn =	 {1-58113-634-X},
+  pages =	 {253--264},
+  location =	 {San Diego, California},
+  publisher =	 {ACM Press},
+}
+
+
+@inproceedings{Avnur:SIGMOD00,
+  author =	 {Ron Avnur and Joseph M. Hellerstein},
+  title =	 {Eddies: Continuously Adaptive Query Processing},
+  booktitle = {Proceedings of ACM SIGMOD},
+  journal =	 {SIGMOD Record},
+  publisher =	 {ACM},
+  volume =	 {29},
+  number =	 {2},
+  year =	 {2000},
+  isbn =	 {1-58113-218-2},
+  pages =	 {261-272},
+}
+
+% Mulitple Query Optimization
+@article{ fonseca95overview,
+    author = "Carlos M. Fonseca and Peter J. Fleming",
+    title = "An Overview of Evolutionary Algorithms in Multiobjective Optimization",
+    journal = "Evolutionary Computation",
+    volume = "3",
+    number = "1",
+    pages = "1-16",
+    year = "1995",
+    url = "citeseer.ist.psu.edu/fonseca95overview.html" }
+
+@article{SystemR,
+  author    = {Morton M. Astrahan and et al.},
+  title     = {System R: Relational Approach to Database Management},
+  journal   = {TODS},
+  volume    = {1},
+  number    = {2},
+  year      = {1976},
+  pages     = {97-137},
+
+}
+
+
+@inproceedings{ Roy:SIGMOD00,
+  author =	 {Prasan Roy and S. Seshadri and S. Sudarshan and
+                  Siddhesh Bhobe},
+  title =	 {Efficient and extensible algorithms for multi query
+                  optimization},
+  booktitle =	 {Proceedings of ACM SIGMOD},
+  year =	 {2000},
+  isbn =	 {1-58113-217-4},
+  pages =	 {249--260},
+  location =	 {Dallas, Texas, United States},
+  publisher =	 {ACM Press},
+}
+
+@article{Sellis:TODS88,
+  author =	 {Timos K. Sellis},
+  title =	 {Multiple-query optimization},
+  journal =	 {ACM Transactions on Database Systems (TODS)},
+  volume =	 {13},
+  number =	 {1},
+  year =	 {1988},
+  issn =	 {0362-5915},
+  pages =	 {23--52},
+  publisher =	 {ACM Press},
+}
+
+@article{ Shim:DKE94,
+  author =	 "Kyuseok Shim and Timos K. Sellis and Dana S. Nau",
+  title =	 "Improvements on a Heuristic Algorithm for
+                  Multiple-Query Optimization",
+  journal =	 "Data Knowledge Engineering",
+  volume =	 "12",
+  number =	 "2",
+  pages =	 "197--222",
+  year =	 "1994",
+  url =		 "citeseer.nj.nec.com/shim94improvements.html"
+}
+
+@inproceedings{Rosenthal:VLDB88,
+  author =	 {Arnon Rosenthal and Upen S. Chakravarthy},
+  editor =	 {Fran\c{c}ois Bancilhon and David J. DeWitt},
+  title =	 {Anatomy of a Mudular Multiple Query Optimizer},
+  booktitle =	 {Proceedings of VLDB},
+  publisher =	 {Morgan Kaufmann},
+  year =	 {1988},
+  isbn =	 {0-934613-75-3},
+  pages =	 {230-239},
+}
+
+@article{ Ioannidis:VLDB97,
+  author =	 "Yannis E. Ioannidis and Raymond T. Ng and Kyuseok
+                  Shim and Timos K. Sellis",
+  title =	 "Parametric Query Optimization",
+  journal =	 "VLDB Journal: Very Large Data Bases",
+  volume =	 "6",
+  number =	 "2",
+  pages =	 "132--151",
+  year =	 "1997",
+  url =          "citeseer.nj.nec.com/article/ioannidis92parametric.html"
+}
+
+@inproceedings{ Godfrey:ISMIS96,
+    author = "Parke Godfrey and Jarek Gryz and Jack Minker",
+    title = "Semantic Query Optimization for Bottom-Up Evaluation",
+    booktitle = "International Syposium on Methodologies for Intelligent Systems",
+    pages = "561-571",
+    year = "1996",
+}
+
+% Misc Links
+@BOOK{Elmasri:DBMS00,
+  AUTHOR =	 "Ramez Elmasri and Shamkant B. Navathe",
+  TITLE =	 "Fundamentals of Database Systems",
+  PUBLISHER =	 "Addison-Wesley Publishing Company",
+  ADDRESS =	 "Reading, Massachusetts",
+  YEAR =	 "2000"
+}
+
+@BOOK{Garey:Garey79,
+  AUTHOR =	 "M. Garey and D. S. Johnson",
+  TITLE =	 "Computers and Intractability - A Guide to Theory of NP-Completeness",
+  PUBLISHER =	 "W. H. Freeman and Company",
+  YEAR =	 "1979"
+}
+
+@phdthesis{ Poosala:Histograms,
+  author =	 "V. Poosala",
+  title =	 "Histogram-based selectivity estimation for query
+                  optimization",
+  school =	 "University of Wisconsin",
+  text =	 "V. Poosala. Histogram-based selectivity estimation
+                  for query optimization. PhD Dissertation,
+                  U. Wisconsin, 1997.",
+  year =	 "1997"
+}
+
+@TechReport{Arasu:CQL02,
+  author =	 "Arasu Arvind and Babu Shivnath and Widom Jennifer",
+  title =	 "An Abstract Semantics and Concrete Language for
+                  Continuous Queries over Streams and Relations",
+  institution =	 "Department of Computer Science, Stanford University",
+  text =	 "Arasu Arvind and Babu Shivnath and Widom
+                  Jennifer. An Abstract Semantics and Concrete
+                  Language for Continuous Queries over Streams and
+                  Relations. Technical Report, Stanford University,
+                  2002.",
+  month =	 Nov,
+  year =	 "2002"
+}
+
+@inproceedings{ Graefe:Volcano,
+  author =	 "Goetz Graefe and William J. McKenna",
+  title =	 "The Volcano Optimizer Generator: Extensibility and
+                  Efficient Search",
+  booktitle =	 "Proceedings of ICDE",
+  pages =	 "209-218",
+  year =	 "1993",
+  url =		 "citeseer.nj.nec.com/graefe93volcano.html"
+}
+
+@misc{Tucker:NexMark,
+  author =	 "Pete Tucker and Kristin Tufte and Vassilis Papadimos
+                  and David Maier",
+  title =	 "NEXMark - A Benchmark for Queries over Data Streams. Technical Draft",
+  text =	 "Pete Tucker and Kristin Tufte and Vassilis Papadimos
+                  and David Maier. NEXMark - A Benchmark for Queries
+                  over Data Streams. Technical Draft",
+  year =	 "2003"
+}
+
+
+@misc{ITA:ITA05,
+  author =	 "Internet Traffic Archive",
+  title =	 "ITA Homepage, http://www.acm.org/sigcomm/ITA",
+  year =	 "2005"
+}
+
+@misc{Ebay:Ebay03,
+  author =	 "eBay",
+  title =	 "eBay Homepage, http://pages.ebay.com",
+  year =	 "2007"
+}
+
+@misc{Traderbot:Traderbot03,
+  author =	 "Traderbot",
+  title =	 "Traderbot Homepage, http://traderbot.com",
+  year =	 "2003"
+}
+
+@misc{TANN:TANN04,
+  author =       "Travel Advisory News Network",
+  title =        "TANN Homepage, http://traffic.tann.net",
+  year =         "2004"
+}
+
+@misc{AccuWeather:AccuWeather04,
+  author =       "AccuWeather",
+  title =        "AccuWeather Homepage, http://www.accuweather.com",
+  year =         "2004"
+}
+
+@misc{SQR:SQR04,
+  author =       "Stream Query Repository",
+  title =        "SQR Homepage, http://www-db.stanford.edu/stream/sqr",
+  year =         "2004"
+}
+
+@misc{SBASE:SBASE05,
+  author =       "StreamBase Stream Processing Engine",
+  title =        "StreamBase Systems Inc. Homepage, http://www.streambase.com/",
+  year =         "2007"
+}
+
+
+@inproceedings{Babcock:PODS02,
+ author = {Brian Babcock and Shivnath Babu and Mayur Datar and Rajeev Motwani and Jennifer Widom},
+ title = {Models and issues in data stream systems},
+ booktitle = {Proceedings of Principles of database systems},
+ year = {2002},
+}
+
+@inproceedings{Papa:PODS01,
+ author = {Christos Papadimitriou and Mihalis Yannakakis},
+ title = {Multiobjective Query Optimization},
+ booktitle = {Proceedings of Principles of database systems},
+ year = {2001},
+ }
+
+@misc{ Henzinger:Tech98,
+  author = "M. Henzinger and P. Raghavan and S. Rajagopalan",
+  title = "Computing on data streams",
+  text = "M. Henzinger, P. Raghavan and S. Rajagopalan, Computing on data streams,
+    Technical Note 1998-011, Digital Systems Research Center, Palo Alto, CA,
+    May 1998.",
+  year = "1998",
+}
+
+% Query Optimization in Data-streams
+@inproceedings{ Kang:ICDE03,
+  author =	 "J. Kang and J. F. Naughton and S. D. Viglas",
+  title =	 "Evaluating Window Joins over Unbounded Streams ",
+  booktitle =	 "Proceedings of ICDE",
+  year =	 "2003"
+}
+
+@inproceedings{ Viglas:SIGMOD02,
+  author =	 "Stratis Viglas and Jeffrey F. Naughton",
+  title =	 "Rate-Based Query Optimization for Streaming
+                  Information Sources",
+  booktitle =	 "Proceedings of SIGMOD",
+  year =	 "2002"
+}
+
+@inproceedings{ Viglas:VLDB02,
+  author =	 "Stratis Viglas and Jeffrey F. Naughton and Josef
+                  Burger",
+  title =	 "Maximizing the Output Rate of Multi-Join Queries
+                  over Streaming Information Sources",
+  booktitle =	 " Proceedings of VLDB",
+  year =	 "2003"
+}
+
+@inproceedings{ Chen:VLDB02,
+  author =	 "Jianjun Chen and David J. DeWitt",
+  title =	 "Dynamic Re-grouping of Continuous Queries",
+  booktitle =	 "Proceedings of VLDB",
+  year =	 "2002"
+}
+
+@inproceedings{ Chen:ICDE02,
+  author =	 "Jianjun Chen and David J. DeWitt and Jeffery
+                  F. Naughton",
+  title =	 "Design and evaluation of alternative selection
+                  placement strategies in optimizing continuous
+                  queries",
+  booktitle =	 "Proceedings of ICDE",
+  year =	 "2002"
+}
+
+@inproceedings{ Srivastava:MPDS03,
+  author =       "U. Srivastava and S. Babu and J. Widom",
+  title =        "Monitoring Stream Properties for Continuous Query Processing",
+  booktitle =    "Proceedings of the 2003 Workshop on Management and Processing of Data Streams (MPDS)",
+  year =         "2003"
+}
+
+
+@article{207740,
+ author = {Ben Kao and H\&\#233;ctor Garc\&\#237;a-Molina},
+ title = {An overview of real-time database systems},
+ book = {Advances in real-time systems},
+ year = {1995},
+ isbn = {0-13-083348-7},
+ pages = {463--486},
+ publisher = {Prentice-Hall, Inc.},
+ address = {Upper Saddle River, NJ, USA},
+ }
+
+@misc{TAOProject,
+  author =       "",
+  title =        "TAO Project, http://www.pmel.noaa.gov/tao/",
+  year =         "2007"
+}
+
+@misc{tsunami,
+  author =       "",
+  title =        "Pacific Tsunami Warning Center, http://www.prh.noaa.gov/pr/ptwc/",
+  year =         "2007"
+}
+
+@misc{yahoonews,
+  author =       "",
+  title =        "Yahoo News, http://news.yahoo.com/rss",
+  year =         "2007"
+}
+
+@misc{NYSE,
+  author =       "",
+  title =        "NYSE Euronext, http://www.nyse.com/",
+  year =         "2007"
+}
+
+@misc{etrade,
+  author =       "",
+  title =        "ETrade Financial, http://etrade.com",
+  year =         "2007"
+}
+
+@misc{scottrade,
+  author =       "",
+  title =        "Scottrade Homepage, http://scottrade.com",
+  year =         "2007"
+}
+
+@misc{coral8,
+  author =       "",
+  title =        "Coral8, Inc. Homepage, http://www.coral8.com",
+  year =         "2007"
+}
+
+@inproceedings{275492,
+ author = {Surajit Chaudhuri},
+ title = {An overview of query optimization in relational systems},
+ booktitle = {Principles of database systems},
+ year = {1998},
+ isbn = {0-89791-996-3},
+ pages = {34--43},
+ location = {Seattle, Washington, United States},
+ doi = {http://doi.acm.org/10.1145/275487.275492},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@article{1038205,
+ author = {Abhinandan Das},
+ note = {Member-Johannes Gehrke and Member-Mirek Riedewald},
+ title = {Semantic Approximation of Data Stream Joins},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ volume = {17},
+ number = {1},
+ year = {2005},
+ issn = {1041-4347},
+ pages = {44--59},
+ doi = {http://dx.doi.org/10.1109/TKDE.2005.17},
+ publisher = {IEEE Educational Activities Department},
+ address = {Piscataway, NJ, USA},
+ }
+
+@inproceedings{tatbul-vldb06,
+    author      = {N. Tatbul and S. Zdonik},
+    title       = {{Window-aware Load Shedding for Aggregation Queries
+                    over Data Streams}},
+    booktitle   = {{International Conference on Very Large Data Bases
+                    (VLDB'06)}},
+    address     = {Seoul, Korea},
+    month       = {September},
+    year        = {2006}
+}
+
+@inproceedings{tatbul-lncs2490,
+ author = {Nesime Tatbul},
+ title = {QoS-Driven Load Shedding on Data Streams},
+ booktitle = {EDBT '02: Proceedings of the Worshops XMLDM, MDDE, and YRWS on XML-Based Data Management and Multimedia Engineering-Revised Papers},
+ year = {2002},
+ isbn = {3-540-00130-1},
+ }
+
+@inproceedings{ srivastava04memorylimited,
+  author = "U. Srivastava and J. Widom",
+  title = "Memory-limited execution of windowed stream joins",
+  text = "U. Srivastava and J. Widom. Memory-limited execution of windowed stream
+    joins. In VLDB, 2004.",
+  booktitle = "VLDB",
+  year = "2004",
+  url = "citeseer.ist.psu.edu/srivastava04memorylimited.html" }
+
+@TechReport{ gedik05adaptive,
+  author = "B. Gedik and K. Wu and P. Yu and L. Liu",
+  title = "Adaptive load shedding for windowed stream joins",
+  text = "B. Gedik, K.-L. Wu, P. S. Yu, and L. Liu. Adaptive load shedding for windowed
+    stream joins. Technical report, 2005.",
+  year = "2005",
+  url = "citeseer.ist.psu.edu/gedik05adaptive.html" }
+
+@inproceedings{tatbul-vldb07,
+    author      = {N. Tatbul and U. \c{C}etintemel and S. Zdonik},
+    title       = {{Staying FIT: Efficient Load Shedding Techniques for
+                    Distributed Stream Processing}},
+    booktitle   = {{International Conference on Very Large Data Bases
+                    (VLDB'07)}},
+    address     = {Vienna, Austria},
+    month       = {September},
+    year        = {2007}
+}
+
+@article{ urhan00xjoin,
+    author = "Tolga Urhan and Michael J. Franklin",
+    title = "{XJoin}: A Reactively-Scheduled Pipelined Join Operator",
+    journal = "IEEE Data Engineering Bulletin",
+    volume = "23",
+    number = "2",
+    pages = "27-33",
+    year = "2000",
+    url = "citeseer.ist.psu.edu/318028.html" }
+
+@inproceedings{ widom03query,
+  author = "J. Widom and R. Motwani",
+  title = "Query Processing, Resource Management, and
+    Approximation in a Data Stream Management System",
+  booktitle = "Proceedings of CIDR",
+  year = "2003",
+  url = "citeseer.ist.psu.edu/widom03query.html" }
+
+@article{babcock03operator,
+  author    = {Brian Babcock and
+               Shivnath Babu and
+               Mayur Datar and
+               Rajeev Motwani and
+               Dilys Thomas},
+  title     = {Operator scheduling in data stream systems},
+  journal   = {VLDB Journal},
+  volume    = {13},
+  number    = {4},
+  year      = {2004},
+  pages     = {333-353},
+  ee        = {http://dx.doi.org/10.1007/s00778-004-0132-6},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+  }
+
+@inproceedings{carney03operator,
+ author = {Don Carney and U\u{g}ur \c{C}etintemel and Alex Rasin and Stan Zdonik and Mitch Cherniack and Mike Stonebraker},
+ title = {Operator scheduling in a data stream manager},
+ booktitle = {vldb'2003: Proceedings of the 29th international conference on Very large data bases},
+ year = {2003},
+ isbn = {0-12-722442-4},
+ pages = {838--849},
+ location = {Berlin, Germany},
+ publisher = {VLDB Endowment},
+ }
+
+@misc{igoogle,
+  author =       "",
+  title =        "iGoogle Webpage, http://www.google.com/ig",
+  year =         "2007"
+}
+
+@misc{sensornode,
+  author =       "",
+  title =        "Sensor node wiki, http://en.wikipedia.org/wiki/Sensor\_node",
+  year =         "2007"
+}
+
+@misc{mworld,
+  author =       "",
+  title =        "MathWorld, http://mathworld.wolfram.com",
+  year =         "2007"
+}
+
+@TechReport{Jain,
+  author =       "R. Jain and D. Chiu and W. Hawe",
+  title =        "A Quantitative Measure of Fairness and Discrimination
+                 for Resource Allocation in Shared Computer Systems",
+  type =         "DEC Research Report",
+  number =       "TR-301",
+  institution =  "Digital Equipment Corporation",
+  address =      "Maynard, MA, USA",
+  pages =        "38",
+  month =        sep,
+  year =         "1984",
+  bibdate =      "Tue Aug 18 09:05:39 1998",
+  bibsource =
+  "ftp://ftp.math.utah.edu/pub/bibnet/authors/j/jain-raj.bib",
+  URL =
+  "ftp://ftp.netlab.ohio-state.edu/pub/jain/papers/fairness.htm",
+}
+
+
+@article{ bloom70spacetime,
+    author = "Burton H. Bloom",
+    title = "Space/Time Trade-offs in Hash Coding with Allowable Errors",
+    journal = "Communications of the ACM",
+    volume = "13",
+    number = "7",
+    pages = "422-426",
+    year = "1970",
+    url = "citeseer.ist.psu.edu/bloom70spacetime.html" 
+    }
+
+ @INPROCEEDINGS{deng06,
+  AUTHOR = {Fan Deng and Davood Rafiei},
+  BOOKTITLE = {ACM SIGMOD'06},
+  TITLE = {Approximately Detecting Duplicates for Streaming Data using Stable Bloom Filters},
+}
+
+
+@inproceedings{ijoin,
+ author = {Kulkarni, Dhananjay and Ravishankar, Chinya V.},
+ title = {iJoin: Importance-Aware Join Approximation over Data Streams},
+ booktitle = {SSDBM '08: Proceedings of the 20th international conference on Scientific and Statistical Database Management},
+ year = {2008},
+ isbn = {978-3-540-69476-2},
+ pages = {541--548},
+ location = {Hong Kong, China},
+ doi = {http://dx.doi.org/10.1007/978-3-540-69497-7_36},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+ }
+ 
+ @INPROCEEDINGS{Fan98summarycache,
+    author = {Li Fan and Pei Cao and Jussara Almeida and Andrei Z. Broder},
+    title = {Summary Cache: A Scalable Wide-Area Web Cache Sharing Protocol},
+    booktitle = {IEEE/ACM Transactions on Networking},
+    year = {1998},
+    pages = {254--265}
+}    
+
+@inproceedings{872787,
+ author = {Cohen, Saar and Matias, Yossi},
+ title = {Spectral bloom filters},
+ booktitle = {SIGMOD '03: Proceedings of the 2003 ACM SIGMOD international conference on Management of data},
+ year = {2003},
+ isbn = {1-58113-634-X},
+ pages = {241--252},
+ location = {San Diego, California},
+ doi = {http://doi.acm.org/10.1145/872757.872787},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+ 
+ @article{agingbf,
+author = {MyungKeun Yoon},
+title = {Aging Bloom Filter with Two Active Buffers for Dynamic Sets},
+journal ={IEEE Transactions on Knowledge and Data Engineering},
+volume = {22},
+issn = {1041-4347},
+year = {2010},
+pages = {134-138},
+doi = {http://doi.ieeecomputersociety.org/10.1109/TKDE.2009.136},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+}
+
+@article{tbf,
+author = {Kai Cheng and Limin Xiang and Mizuho Iwaihara and Haiyan Xu and Mukesh M. Mohania},
+title = {Time-Decaying Bloom Filters for Data Streams with Skewed Distributions},
+journal ={Research Issues in Data Engineering, International Workshop on},
+volume = {0},
+issn = {1097-8585},
+year = {2005},
+pages = {63-69},
+doi = {http://doi.ieeecomputersociety.org/10.1109/RIDE.2005.15},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+}
+
+@INPROCEEDINGS{Hristidis03efficientir-style,
+    author = {Vagelis Hristidis and Luis Gravano and Yannis Papakonstantinou},
+    title = {Efficient IR-Style Keyword Search over Relational Databases},
+    booktitle = {VLDB},
+    year = {2003},
+    pages = {850--861}
+}
+
+@article{dynamicbf,
+	author = {Deke Guo and Jie Wu and Honghui Chen and Ye Yuan and Xueshan Luo},
+	title = {The Dynamic Bloom Filters},
+	journal={IEEE Transactions on Knowledge and Data Engineering}
+}
+

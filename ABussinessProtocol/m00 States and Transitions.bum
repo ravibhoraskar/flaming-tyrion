@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.comment="Abstract Model. State Transitions only" org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="buy_state≔init" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="sell_state≔init" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Context_0"/>
+<org.eventb.core.variable name=")" org.eventb.core.comment="Sender's state" org.eventb.core.identifier="buy_state"/>
+<org.eventb.core.variable name="*" org.eventb.core.comment="Receiver's state" org.eventb.core.identifier="sell_state"/>
+<org.eventb.core.invariant name="+" org.eventb.core.label="inv1" org.eventb.core.predicate="buy_state∈STATUS"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="sell_state∈STATUS"/>
+<org.eventb.core.event name="-" org.eventb.core.comment="This is the event that is called when the protocol finishes" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="Done">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="buy_state∈{success,failure}"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="sell_state∈{success,failure}"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="." org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="Buyer_Begin">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="buy_state=init"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="buy_state≔free_game" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="/" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="Seller_Begin">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="sell_state=init"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="sell_state≔free_game" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="0" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="Buyer_Fail">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="buy_state∈{init,free_game,last_prop}&#9;"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="buy_state≔failure" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="1" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="Seller_Fail">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="sell_state∈{init,free_game,last_prop}"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="sell_state≔failure" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="2" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="Buyer_Lastprop">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="buy_state=free_game"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="buy_state≔last_prop" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="3" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="Seller_Lastprop">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="sell_state=free_game"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="sell_state≔last_prop" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="4" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="Buyer_Succeed">
+<org.eventb.core.action name="(" org.eventb.core.assignment="buy_state≔success" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="buy_state=last_prop"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="5" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="Seller_Succeed">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="sell_state=last_prop"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="sell_state≔success" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="Buyer_Send_Succeed/BuyerWaitingForACK/EQL" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="FORWARD_INF6" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="FORWARD_INF8" org.eventb.core.prHyps="p11" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="FORWARD_INF10" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="FORWARD_INF12" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="FORWARD_INF14" org.eventb.core.prHyps="p17" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE15" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prHypAction name="FORWARD_INF16" org.eventb.core.prHyps="p19" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE17" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prHypAction name="FORWARD_INF18" org.eventb.core.prHyps="p21" org.eventb.core.prInfHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE19" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="FORWARD_INF20" org.eventb.core.prHyps="p23" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE21" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="FORWARD_INF22" org.eventb.core.prHyps="p25" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="HIDE23" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prHypAction name="FORWARD_INF24" org.eventb.core.prHyps="p27" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="HIDE25" org.eventb.core.prHyps="p27"/>
+<org.eventb.core.prHypAction name="FORWARD_INF26" org.eventb.core.prHyps="p29" org.eventb.core.prInfHyps="p30"/>
+<org.eventb.core.prHypAction name="HIDE27" org.eventb.core.prHyps="p29"/>
+<org.eventb.core.prHypAction name="FORWARD_INF28" org.eventb.core.prHyps="p31" org.eventb.core.prInfHyps="p32"/>
+<org.eventb.core.prHypAction name="HIDE29" org.eventb.core.prHyps="p31"/>
+<org.eventb.core.prHypAction name="FORWARD_INF30" org.eventb.core.prHyps="p33" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="HIDE31" org.eventb.core.prHyps="p33"/>
+<org.eventb.core.prHypAction name="FORWARD_INF32" org.eventb.core.prHyps="p35" org.eventb.core.prInfHyps="p36"/>
+<org.eventb.core.prHypAction name="HIDE33" org.eventb.core.prHyps="p35"/>
+<org.eventb.core.prHypAction name="FORWARD_INF34" org.eventb.core.prHyps="p37" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="HIDE35" org.eventb.core.prHyps="p37"/>
+<org.eventb.core.prHypAction name="FORWARD_INF36" org.eventb.core.prHyps="p39" org.eventb.core.prInfHyps="p40"/>
+<org.eventb.core.prHypAction name="HIDE37" org.eventb.core.prHyps="p39"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p41"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p42"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p43"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p44"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p45"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p46"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p47"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p48"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p49,p50" org.eventb.core.prInfHyps="p51"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p50"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1,p40" org.eventb.core.prInfHyps="p52"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p40"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with BuyerWaitingForACK=f" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p53">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Data=invalid" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p52" org.eventb.core.prInfHyps="p54"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p52"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="BuyerWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Data" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="invalid" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬failure=last_prop">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="fail≠invalid">
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="¬Data=ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="init≠last_prop">
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="BuyerWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="BuyerWaitingForACK=f"/>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="ack∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="init≠free_game">
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="succeed∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="succeed" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬fail=ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="BuyerWaitingForACK=f⇒Data≠ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="t=BuyerWaitingForACK"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬init=free_game">
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="buyer_variant=3">
+<org.eventb.core.prIdent name="buyer_variant" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="failure≠success">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="failure≠free_game">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬succeed=invalid">
+<org.eventb.core.prIdent name="succeed" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬ack=invalid">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="¬fail=invalid">
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="Data∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="succeed≠fail">
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="succeed" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬init=last_prop">
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="succeed≠ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="succeed" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="BuyerWaitingForACK=f⇒¬Data=ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="¬succeed=fail">
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="succeed" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="buy_state=last_prop⇒buyer_variant=3">
+<org.eventb.core.prIdent name="buy_state" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="buyer_variant" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="succeed≠invalid">
+<org.eventb.core.prIdent name="succeed" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="¬succeed=ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="succeed" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="last_prop≠success">
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="init≠success">
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="ack≠invalid">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="t=f"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="free_game≠success">
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬free_game=last_prop">
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬init=success">
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="¬invalid=ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬last_prop=success">
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="DataSet ∖ {invalid,ack}≠(∅ ⦂ ℙ(DataSet))">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬failure=init">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="failure≠init">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="buy_state=last_prop">
+<org.eventb.core.prIdent name="buy_state" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="free_game≠last_prop">
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="buy_state∈STATUS">
+<org.eventb.core.prIdent name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
+<org.eventb.core.prIdent name="buy_state" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="sell_state∈STATUS">
+<org.eventb.core.prIdent name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
+<org.eventb.core.prIdent name="sell_state" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="failure≠last_prop">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="invalid∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="fail≠ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Data=invalid"/>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬DataSet ∖ {invalid,ack}=(∅ ⦂ ℙ(DataSet))">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬failure=free_game">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="fail∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬free_game=success">
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬failure=success">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Buyer_Send_Succeed/Data/EQL" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="FORWARD_INF6" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="FORWARD_INF8" org.eventb.core.prHyps="p10" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="FORWARD_INF10" org.eventb.core.prHyps="p12" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="FORWARD_INF12" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="FORWARD_INF14" org.eventb.core.prHyps="p16" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE15" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prHypAction name="FORWARD_INF16" org.eventb.core.prHyps="p18" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE17" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prHypAction name="FORWARD_INF18" org.eventb.core.prHyps="p20" org.eventb.core.prInfHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE19" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prHypAction name="FORWARD_INF20" org.eventb.core.prHyps="p22" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE21" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="FORWARD_INF22" org.eventb.core.prHyps="p24" org.eventb.core.prInfHyps="p25"/>
+<org.eventb.core.prHypAction name="HIDE23" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prHypAction name="FORWARD_INF24" org.eventb.core.prHyps="p26" org.eventb.core.prInfHyps="p27"/>
+<org.eventb.core.prHypAction name="HIDE25" org.eventb.core.prHyps="p26"/>
+<org.eventb.core.prHypAction name="FORWARD_INF26" org.eventb.core.prHyps="p28" org.eventb.core.prInfHyps="p29"/>
+<org.eventb.core.prHypAction name="HIDE27" org.eventb.core.prHyps="p28"/>
+<org.eventb.core.prHypAction name="FORWARD_INF28" org.eventb.core.prHyps="p30" org.eventb.core.prInfHyps="p31"/>
+<org.eventb.core.prHypAction name="HIDE29" org.eventb.core.prHyps="p30"/>
+<org.eventb.core.prHypAction name="FORWARD_INF30" org.eventb.core.prHyps="p32" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prHypAction name="HIDE31" org.eventb.core.prHyps="p32"/>
+<org.eventb.core.prHypAction name="FORWARD_INF32" org.eventb.core.prHyps="p34" org.eventb.core.prInfHyps="p35"/>
+<org.eventb.core.prHypAction name="HIDE33" org.eventb.core.prHyps="p34"/>
+<org.eventb.core.prHypAction name="FORWARD_INF34" org.eventb.core.prHyps="p36" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="HIDE35" org.eventb.core.prHyps="p36"/>
+<org.eventb.core.prHypAction name="FORWARD_INF36" org.eventb.core.prHyps="p38" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="HIDE37" org.eventb.core.prHyps="p38"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p40"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p41"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p42"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p43"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p44"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p45"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p46"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p47"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p48,p49" org.eventb.core.prInfHyps="p50"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p49"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p51,p39" org.eventb.core.prInfHyps="p52"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p39"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Data=invalid" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p54">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p52" org.eventb.core.prInfHyps="p53"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p52"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Data" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="invalid" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="succeed" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬failure=last_prop">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="fail≠invalid">
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="¬Data=ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="init≠last_prop">
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="BuyerWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+<org.eventb.core.prIdent name="BuyerWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="BuyerWaitingForACK=f">
+<org.eventb.core.prIdent name="BuyerWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="ack∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="init≠free_game">
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="succeed∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬fail=ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="BuyerWaitingForACK=f⇒Data≠ack">
+<org.eventb.core.prIdent name="BuyerWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬init=free_game">
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="buyer_variant=3">
+<org.eventb.core.prIdent name="buyer_variant" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="failure≠success">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="failure≠free_game">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="¬succeed=invalid"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬ack=invalid">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="¬fail=invalid">
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="Data∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="succeed≠fail">
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬init=last_prop">
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="succeed≠ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="BuyerWaitingForACK=f⇒¬Data=ack">
+<org.eventb.core.prIdent name="BuyerWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="¬succeed=fail">
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="buy_state=last_prop⇒buyer_variant=3">
+<org.eventb.core.prIdent name="buy_state" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="buyer_variant" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬t=f">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="succeed≠invalid"/>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="¬succeed=ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="succeed=invalid"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="init≠success">
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="last_prop≠success">
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="ack≠invalid">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="t≠f">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="free_game≠success">
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬free_game=last_prop">
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬init=success">
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="¬invalid=ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬last_prop=success">
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="DataSet ∖ {invalid,ack}≠(∅ ⦂ ℙ(DataSet))">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬failure=init">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="failure≠init">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="init" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="free_game≠last_prop">
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="buy_state=last_prop">
+<org.eventb.core.prIdent name="buy_state" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="buy_state∈STATUS">
+<org.eventb.core.prIdent name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
+<org.eventb.core.prIdent name="buy_state" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="sell_state∈STATUS">
+<org.eventb.core.prIdent name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
+<org.eventb.core.prIdent name="sell_state" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="failure≠last_prop">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="last_prop" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="invalid∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="fail≠ack">
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Data=invalid"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬DataSet ∖ {invalid,ack}=(∅ ⦂ ℙ(DataSet))">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="succeed=Data"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬failure=free_game">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="fail∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬free_game=success">
+<org.eventb.core.prIdent name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬failure=success">
+<org.eventb.core.prIdent name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

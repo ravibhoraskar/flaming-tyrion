@@ -1,0 +1,398 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[top=3cm, bottom=2.5cm, left=3cm, right=2.5cm] {geometry}
+\usepackage {bsymb,b2latex}
+\usepackage{fancyhdr,lastpage,color}
+\lhead{\rm An Event-B Specification of m04~Introducing~Reverse~SendAndAck}
+\rhead {\rm Page \thepage~of \pageref{LastPage}}
+\lfoot{}\cfoot{}\rfoot{}
+\pagestyle{fancy}
+%---------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+\begin{description}
+\BTitle{m04~Introducing~Reverse~SendAndAck}{11 Apr 2011}{08:17:27 PM}
+\MACHINE{m04~Introducing~Reverse~SendAndAck}
+\cmt{ Introducing the channel from the seller to the buyer }
+\REFINES{m03~Introducing~SendAndAck~}
+\SEES{Context\_0, SendAck~context}
+\VARIABLES
+	\begin{description}
+		\Item{ buy\_state }
+		\bcmt{ Sender's state }
+		\Item{ sell\_state }
+		\bcmt{ Receiver's state }
+		\Item{ buyer\_variant }
+		\bcmt{ This is a number that is the variant for the state that the machine is in. The value set by the event is determined by a topological sort on the FSM }
+		\Item{ seller\_variant }
+		\Item{ Data }
+		\bcmt{ The Data Channel (visible to sender and receiver) }
+		\Item{ Ack }
+		\bcmt{ The Ack Channel (visible to sender and receiver) }
+		\Item{ BuyerWaitingForACK }
+		\Item{ ReverseData }
+		\bcmt{ The Reverse Data Channel (visible to sender and receiver) }
+		\Item{ ReverseAck }
+		\bcmt{ The Reverse Ack Channel (visible to sender and receiver) }
+		\Item{ SellerWaitingForACK }
+	\end{description}
+\INVARIANTS
+	\begin{description}
+		\nItemX{ inv1 }{ Ack\in Boolean }
+		\nItemX{ inv2 }{ SellerWaitingForACK\in Boolean }
+		\nItemX{ inv3 }{ ReverseData\in DataDataSet\bunion \{ invalid\}  }
+		\cmt{ ReverseData can't be control packets }
+		\nItemX{ inv4 }{ SellerWaitingForACK=f \limp  ReverseAck=f }
+		\nItemX{ inv5 }{ ReverseAck=t\limp SellerWaitingForACK=t }
+		\nItemX{ inv6 }{ ReverseData\neq invalid \limp SellerWaitingForACK=t }
+		\nItemX{ inv7 }{ ReverseData=invalid\limp SellerWaitingForACK=f }
+		\nItemX{ inv8 }{ ReverseData\neq invalid\limp sell\_state=free\_game }
+	\end{description}
+\EVENTS
+	\INITIALISATION
+		\\\textit{extended}
+		\begin{description}
+		\BeginAct
+			\begin{description}
+			\nItem{ act1 }{ buy\_state:= init }
+			\nItem{ act2 }{ sell\_state:= init }
+			\nItem{ act3 }{ buyer\_variant:= 5 }
+			\nItem{ act4 }{ seller\_variant:= 5 }
+			\nItem{ act5 }{ Data:= invalid }
+			\nItem{ act6 }{ BuyerWaitingForACK:= f }
+			\nItem{ act7 }{ Ack:= f }
+			\nItemX{ act8 }{ ReverseData:= invalid }
+			\nItemX{ act9 }{ SellerWaitingForACK:= f }
+			\nItemX{ act10 }{ ReverseAck:= f }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Done}
+	\cmt{ This is the event that is called when the protocol finishes }
+	\EXTD {Done}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state\in \{ success,failure\}  }
+			\nItem{ grd2 }{ sell\_state\in \{ success,failure\}  }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\Item{ skip }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Send\_Begin}
+	\EXTD {Buyer\_Send\_Begin}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state=init }
+			\nItem{ grd2 }{ Data=invalid }
+			\nItem{ grd3 }{ BuyerWaitingForACK=f }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ Data:= begin }
+			\nItem{ act2 }{ BuyerWaitingForACK:= t }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Begin}
+	\EXTD {Seller\_Begin}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ sell\_state=init }
+			\nItem{ grd2 }{ Data=begin }
+			\nItem{ grd3 }{ Ack=f }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ sell\_state:= free\_game }
+			\nItem{ act2 }{ seller\_variant:= 4 }
+			\nItem{ act3 }{ Ack:= t }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Begin}
+	\EXTD {Buyer\_Begin}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state=init }
+			\nItem{ grd2 }{ Data=begin }
+			\nItem{ grd3 }{ Ack=t }
+			\nItem{ grd4 }{ BuyerWaitingForACK=t }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ buy\_state:= free\_game }
+			\nItem{ act2 }{ buyer\_variant:= 4 }
+			\nItem{ act3 }{ Data:= invalid }
+			\nItem{ act4 }{ Ack:= f }
+			\nItem{ act5 }{ BuyerWaitingForACK:= f }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Send\_Fail}
+	\EXTD {Buyer\_Send\_Fail}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state\in \{ init,free\_game,last\_prop\}  }
+			\nItem{ grd3 }{ Data=invalid }
+			\nItem{ grd4 }{ BuyerWaitingForACK=f }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ Data:= fail }
+			\nItem{ act2 }{ BuyerWaitingForACK:= t }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Fail}
+	\EXTD {Seller\_Fail}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ sell\_state\in \{ init,free\_game,last\_prop\}  }
+			\nItem{ grd2 }{ Data=fail }
+			\nItem{ grd3 }{ Ack=f }
+			\nItemX{ grd4 }{ SellerWaitingForACK=f }
+			\cmt{ Change the state only when the previous ack has been received }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ sell\_state:= failure }
+			\nItem{ act2 }{ seller\_variant:= 1 }
+			\nItem{ act3 }{ Ack:= t }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Fail}
+	\EXTD {Buyer\_Fail}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state\in \{ init,free\_game,last\_prop\} 	 }
+			\nItem{ grd2 }{ Data=fail }
+			\nItem{ grd3 }{ Ack=t }
+			\nItem{ grd4 }{ BuyerWaitingForACK=t }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ buy\_state:= failure }
+			\nItem{ act2 }{ buyer\_variant:= 1 }
+			\nItem{ act3 }{ Ack:= f }
+			\nItem{ act4 }{ Data:= invalid }
+			\nItem{ act5 }{ BuyerWaitingForACK:= f }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Send\_Succeed}
+	\EXTD {Buyer\_Send\_Succeed}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state=last\_prop }
+			\nItem{ grd2 }{ Data=invalid }
+			\nItem{ grd3 }{ BuyerWaitingForACK=f }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ Data:= succeed }
+			\nItem{ act2 }{ BuyerWaitingForACK:= t }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Succeed}
+	\EXTD {Seller\_Succeed}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ sell\_state=last\_prop }
+			\nItem{ grd2 }{ Data=succeed }
+			\nItem{ grd3 }{ Ack=f }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ sell\_state:= success }
+			\nItem{ act2 }{ seller\_variant:= 2 }
+			\nItem{ act3 }{ Ack:= t }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Succeed}
+	\EXTD {Buyer\_Succeed}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state=last\_prop }
+			\nItem{ grd2 }{ Data=succeed }
+			\nItem{ grd3 }{ Ack=t }
+			\nItem{ grd4 }{ BuyerWaitingForACK=t }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ buy\_state:= success }
+			\nItem{ act2 }{ buyer\_variant:= 2 }
+			\nItem{ act3 }{ Data:= invalid }
+			\nItem{ act4 }{ Ack:= f }
+			\nItem{ act5 }{ BuyerWaitingForACK:= f }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Send\_LastProp}
+	\EXTD {Buyer\_Send\_LastProp}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state=free\_game }
+			\nItem{ grd2 }{ Data=invalid }
+			\nItem{ grd3 }{ BuyerWaitingForACK=f }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ Data:= last\_proposal }
+			\nItem{ act2 }{ BuyerWaitingForACK:= t }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Lastprop}
+	\EXTD {Seller\_Lastprop}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ sell\_state=free\_game }
+			\nItem{ grd2 }{ Data=last\_proposal }
+			\nItem{ grd3 }{ Ack=f }
+			\nItemX{ grd4 }{ SellerWaitingForACK=f }
+			\cmt{ Change state only when previous ack has been received }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ sell\_state:= last\_prop }
+			\nItem{ act2 }{ seller\_variant:= 3 }
+			\nItem{ act3 }{ Ack:= t }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Lastprop}
+	\EXTD {Buyer\_Lastprop}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ buy\_state=free\_game }
+			\nItem{ grd2 }{ Data=last\_proposal }
+			\nItem{ grd3 }{ Ack=t }
+			\nItem{ grd4 }{ BuyerWaitingForACK=t }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ buy\_state:= last\_prop }
+			\nItem{ act2 }{ buyer\_variant:= 3 }
+			\nItem{ act3 }{ Data:= invalid }
+			\nItem{ act4 }{ Ack:= f }
+			\nItem{ act5 }{ BuyerWaitingForACK:= f }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Send\_Stuff}
+	\cmt{ Buyer sends something and waits for ack, during free game state }
+	\EXTD {Buyer\_Send\_Stuff}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ Data=invalid }
+			\nItem{ grd2 }{ buy\_state=free\_game }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ Data:\in DataDataSet	 }
+			\nItem{ act2 }{ BuyerWaitingForACK:= t }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Get\_Stuff}
+	\cmt{ Seller sends the Ack for the buyer's message in the free game state }
+	\EXTD {Seller\_Get\_Stuff}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd3 }{ sell\_state=free\_game }
+			\nItem{ grd1 }{ Data\in DataDataSet }
+			\nItem{ grd2 }{ Ack=f }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ Ack:= t }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Get\_Ack\_for\_Stuff}
+	\EXTD {Buyer\_Get\_Ack\_for\_Stuff}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ BuyerWaitingForACK=t }
+			\nItem{ grd2 }{ buy\_state=free\_game }
+			\nItem{ grd3 }{ Data\in DataDataSet }
+			\nItem{ grd4 }{ Ack=t }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ BuyerWaitingForACK:= f }
+			\nItem{ act2 }{ Data:= invalid }
+			\nItem{ act3 }{ Ack:= f }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Send\_Stuff}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ SellerWaitingForACK=f }
+			\nItemX{ grd2 }{ ReverseData=invalid }
+			\nItemX{ grd3 }{ sell\_state=free\_game }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ SellerWaitingForACK:= t }
+			\nItemX{ act2 }{ ReverseData:\in DataDataSet }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Get\_Stuff}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ ReverseData\in DataDataSet }
+			\nItemX{ grd2 }{ ReverseAck=f }
+			\nItemX{ grd3 }{ buy\_state=free\_game }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ ReverseAck:= t }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Get\_Ack\_for\_Stuff}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ SellerWaitingForACK=t }
+			\nItemX{ grd2 }{ ReverseData\neq invalid }
+			\nItemX{ grd3 }{ ReverseAck=t }
+			\nItemX{ grd4 }{ sell\_state=free\_game }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ ReverseData:= invalid }
+			\nItemX{ act2 }{ ReverseAck:= f }
+			\nItemX{ act3 }{ SellerWaitingForACK:= f }
+			\end{description}
+		\EndAct
+		\end{description}
+\END
+\end{description}
+\end{document}

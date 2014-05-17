@@ -1,0 +1,14 @@
+\subsection{Design Patterns}
+The "SendAndAck One Channel" design pattern is used several times in the Machine "m03 Introducing SendAndAck". It is used at the following places:
+\begin{itemize}
+\item Begin Events (go to free\_game state)
+\item Fail Events (go to the failure state)
+\item Succeed Events (go to the success state)
+\item Last Proposal Events (go to the last\_prop state)
+\item Events where the buyer sends stuff and seller acks
+\item Events where the seller sends stuff and buyer acks
+\end{itemize}
+
+If proper support for design patterns is available, then any change to the underlying send and receive mechanism would involve only changing the "SendAndAck One Channel" machine, and proving the invariants for it. For example, extending this model to an unreliable channel would need refining this design pattern machine for an unreliable channel (By introducing the \emph{Demon Events}). In case of this particular project, design pattern support would lead to something similar to \emph{Network Layers}. The design pattern would be the Transport Layer, which guarantess lossless and in order packet delivery. The Bussiness Protocol would then be like the Application Layer, which uses the Transport Layer without really worrying about its intricacies, and how it works on the inside. Also, it would make possible independent and parallel refinements at the transport and application layers.
+
+However, Rodin doesn't have any support for design patterns. This leads to copying of code in copious amounts. Also, any change in the Design pattern (e.g. going from a single channel to two channels for Data and Ack) requires the same change to be copied at six places, which is quite a nuisance.

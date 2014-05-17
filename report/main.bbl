@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{AbrialBook}
+{\sc Abrial, J.-R.}
+\newblock {\em Modeling in Event-B: System and Software Engineering}.
+\newblock Cambridge University Press, 2010.
+
+\bibitem{AbrialBHHMV10}
+{\sc Abrial, J.-R., Butler, M., Hallerstede, S., Hoang, T.~S., Mehta, F., and
+  Voisin, L.}
+\newblock Rodin: an open toolset for modelling and reasoning in {Event-B}.
+\newblock {\em STTT 12}, 6 (2010), 447--466.
+
+\bibitem{JoachimVizing}
+{\sc Breitner, J.}
+\newblock Proving vizing’s theorem with rodin.
+\newblock Tech. rep., Indian Institute of Technology, Bombay, March 2011.
+
+\end{thebibliography}

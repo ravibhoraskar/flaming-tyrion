@@ -1,0 +1,14 @@
+\section{Requirements Document}
+\begin{itemize}
+\item The protocol determines the negotiation taking place between a buyer and a seller
+\item The two parties may agree on a final agreement or may not succeed in finding an agreement
+\item The protocol is divided up into five states: the initial state, the free game state, the last proposal state, the failure state and the success state.
+\item The protocol can end in either the failure or the success state.
+\item State transitions are allowed as in the FSM showed in Figure \ref{statetransitions}.
+\item A transition is allowed from init, free game and last proposal state to the failure state. 
+\item A transition is allowed from last proposal state to the success state.
+\item Each state transition can occur exactly once in one run of the protocol
+\item The buyer initiates every state transition by sending a message. The seller changes state when it receives the message, and the buyer when it receives the Ack. Thus, the buyer performs a state transition only after the seller has already done so.
+\item In the free game state, both buyer and seller can send messages to each other in an asynchronous manner. Each message must be acknowledged, and the sender does not send the next message till the Ack is received.
+\item In the last proposal state, the buyer may send either a \emph{succeed} or \emph{fail} message, which causes appropriate state transitions.
+\end{itemize}

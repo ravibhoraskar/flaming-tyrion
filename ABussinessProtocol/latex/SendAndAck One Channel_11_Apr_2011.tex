@@ -1,0 +1,93 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[top=3cm, bottom=2.5cm, left=3cm, right=2.5cm] {geometry}
+\usepackage {bsymb,b2latex}
+\usepackage{fancyhdr,lastpage,color}
+\lhead{\rm An Event-B Specification of SendAndAck~One~Channel}
+\rhead {\rm Page \thepage~of \pageref{LastPage}}
+\lfoot{}\cfoot{}\rfoot{}
+\pagestyle{fancy}
+%---------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+\begin{description}
+\BTitle{SendAndAck~One~Channel}{11 Apr 2011}{08:17:11 PM}
+\MACHINE{SendAndAck~One~Channel}
+\cmt{ Ideally this should refine the other SendAndAck machines. We get rid of the valid channel }
+\SEES{SendAck~context}
+\VARIABLES
+	\begin{description}
+		\Item{ SenderWaitingForACK }
+		\Item{ Data }
+		\Item{ Ack }
+	\end{description}
+\INVARIANTS
+	\begin{description}
+		\nItemX{ inv11 }{ Ack\in Boolean }
+		\nItemX{ inv1 }{ SenderWaitingForACK\in Boolean }
+		\nItemX{ inv2 }{ Data\in DataSet }
+		\nItemX{ inv6 }{ SenderWaitingForACK=f \limp  Ack=f }
+		\cmt{ Ack may be true only when sender is waiting for it }
+		\nItemX{ inv13 }{ Ack=t\limp SenderWaitingForACK=t }
+		\cmt{ Ack may not be sent unnecessarily }
+		\nItemX{ inv7 }{ Data\neq invalid \limp SenderWaitingForACK=t }
+		\cmt{ Once Sender has received ack, it sets the data to invalid }
+		\nItemX{ inv12 }{ Data=invalid\limp SenderWaitingForACK=f }
+		\cmt{ Sender cannot wait for an ack of invalid Data }
+	\end{description}
+\EVENTS
+	\INITIALISATION
+		\begin{description}
+		\BeginAct
+			\begin{description}
+			\nItemX{ act1 }{ Data:= invalid }
+			\nItemX{ act2 }{ SenderWaitingForACK:= f }
+			\nItemX{ act5 }{ Ack:= f }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {SenderSend}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ SenderWaitingForACK=f }
+			\nItemX{ grd2 }{ Data=invalid }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ SenderWaitingForACK:= t }
+			\nItemX{ act2 }{ Data:\in DataSet\setminus \{ invalid\}  }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {ReceiverReceive}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ Data\in DataSet\setminus \{ invalid\}  }
+			\nItemX{ grd2 }{ Ack=f }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act3 }{ Ack:= t }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {SenderGetAck}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ SenderWaitingForACK=t }
+			\nItemX{ grd2 }{ Data\neq invalid }
+			\nItemX{ grd3 }{ Ack=t }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ Data:= invalid }
+			\nItemX{ act2 }{ SenderWaitingForACK:= f }
+			\nItemX{ act3 }{ Ack:= f }
+			\end{description}
+		\EndAct
+		\end{description}
+\END
+\end{description}
+\end{document}

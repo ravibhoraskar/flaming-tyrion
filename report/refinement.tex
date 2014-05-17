@@ -1,0 +1,21 @@
+\section{Refinement Strategy}
+The refinement strategy takes place at two levels. The first one is at the Design Pattern level, where we create a more and more concrete model of sending and receiving messages (the Transport Layer) through successive refinements. The second is at the Business Protocol level (the Application Layer), which uses these design patterns, and creates a more concrete protocol through successive refinements.
+
+Ideally, we would like these two refinement sequences to occur independently of each other, but due to the limitations of Rodin described in Section \ref{designpatterns}, we adopt the following refinement strategy.
+
+\subsection{Refinement Strategy for the Design Pattern}
+\begin{enumerate}
+\item \texttt{\bf SendAndAck }The Abstract Model. The Data channel is not present. The state transitions are handled by using 2 channels: \emph{valid} and \emph{ack}. Sequence Numbers of messages are maintained. 
+\item \texttt{\bf SendAndAck1 Add Data }First Refinement. We add the Data channel.
+\item \texttt{\bf SendAndAck One Channel }Ideally, this should be a refinement of the above machine. But due to problems with using the Witness feature, we created a separate machine. We do away with the \emph{valid} channel, as the Data channel takes care of the validity. We also do away with sequence numbers, as they are not required in this problem.
+\end{enumerate}
+
+\subsection{Refinement Strategy for the Bussiness Protocol}
+\begin{enumerate}
+\item \texttt{\bf m00 States and Transitions }The Abstract Model. All the state transitions are the events.
+\item \texttt{\bf m01 Convergence of Buyer Events} We prove that the Buyer Events converge, that is, only a finite number of state transitions can occur for the buyer.
+\item \texttt{\bf m02 Convergence of Seller Events} We prove that the Seller Events converge, that is, only a finite number of state transitions can occur for the seller.
+\item \texttt{\bf m03 Introducing SendAndAck} We introduce the communication channel from the buyer to the seller in this refinement. Design Patterns are used.
+\item \texttt{\bf m04 Introducing Reverse SendAndAck} We introduce the communication channel from the seller to the buyer in this refinement. Design Patterns are used. This communication channel is required for the asynchronous communication in the free game state.
+\end{enumerate}
+

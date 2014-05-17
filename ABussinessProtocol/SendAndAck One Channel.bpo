@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="36">
+<org.eventb.core.poIdentifier name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+<org.eventb.core.poIdentifier name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.poIdentifier name="DataDataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.poIdentifier name="begin" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.poIdentifier name="fail" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="invalid" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="last_proposal" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="succeed" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Boolean={t,f}" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="t≠f" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="fail∈DataSet" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="succeed∈DataSet" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#8"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="invalid∈DataSet" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="last_proposal∈DataSet" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#&gt;"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="begin∈DataSet" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#D"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="fail≠invalid" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="succeed≠invalid" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#9"/>
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="succeed≠fail" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#;"/>
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="last_proposal≠fail" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#?"/>
+<org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="last_proposal≠invalid" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#A"/>
+<org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="last_proposal≠succeed" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#B"/>
+<org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="begin≠fail" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#E"/>
+<org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="begin≠invalid" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#F"/>
+<org.eventb.core.poPredicate name="PRD15" org.eventb.core.predicate="begin≠succeed" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#G"/>
+<org.eventb.core.poPredicate name="PRD16" org.eventb.core.predicate="begin≠last_proposal" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#H"/>
+<org.eventb.core.poPredicate name="PRD17" org.eventb.core.predicate="DataSet ∖ {invalid}≠(∅ ⦂ ℙ(DataSet))" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#6"/>
+<org.eventb.core.poPredicate name="PRD18" org.eventb.core.predicate="DataDataSet⊆DataSet" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#L"/>
+<org.eventb.core.poPredicate name="PRD19" org.eventb.core.predicate="DataDataSet=DataSet ∖ {fail,succeed,invalid,last_proposal,begin}" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#M"/>
+<org.eventb.core.poPredicate name="PRD20" org.eventb.core.predicate="DataDataSet≠(∅ ⦂ ℙ(DataSet))" org.eventb.core.source="/ABussinessProtocol/SendAck context.buc|org.eventb.core.contextFile#SendAck context|org.eventb.core.axiom#N"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="36">
+<org.eventb.core.poIdentifier name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.poIdentifier name="Data" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="f=f⇒f=f" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="f=t⇒f=t" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#&gt;"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#&gt;"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#INITIALISATION\/inv13\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="invalid≠invalid⇒f=t" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="invalid=invalid⇒f=f" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#="/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#="/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#INITIALISATION\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT0" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="36">
+<org.eventb.core.poIdentifier name="Data'" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="SenderWaitingForACK'" org.eventb.core.type="Boolean"/>
+<org.eventb.core.poIdentifier name="Ack'" org.eventb.core.type="Boolean"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT0" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTIDENTEVT0" org.eventb.core.poStamp="36"/>
+<org.eventb.core.poSequent name="SenderSend/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT1"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="t=f⇒Ack=f" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#6"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#SenderSend\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SenderSend/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT1"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="Ack=t⇒t=t" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#&gt;"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#6"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#&gt;"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#SenderSend\/inv13\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SenderSend/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Data'∈DataSet ∖ {invalid}" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#6|org.eventb.core.action#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="Data'≠invalid⇒t=t" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#6"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#SenderSend\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SenderSend/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Data'∈DataSet ∖ {invalid}" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#6|org.eventb.core.action#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="Data'=invalid⇒t=f" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#="/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#6"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#="/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#SenderSend\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SenderSend/act2/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT1"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="DataSet ∖ {invalid}≠(∅ ⦂ ℙ(DataSet))" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#6|org.eventb.core.action#*"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#6|org.eventb.core.action#*"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT1" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="36">
+<org.eventb.core.poIdentifier name="Data'" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="SenderWaitingForACK'" org.eventb.core.type="Boolean"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT1" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTIDENTEVT1" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="SenderWaitingForACK=f" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#6|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Data=invalid" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#6|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="ReceiverReceive/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT2"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="SenderWaitingForACK=f⇒t=f" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#7"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#ReceiverReceive\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="ReceiverReceive/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT2"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="t=t⇒SenderWaitingForACK=t" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#&gt;"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#7"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#&gt;"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#ReceiverReceive\/inv13\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT2" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="36">
+<org.eventb.core.poIdentifier name="Ack'" org.eventb.core.type="Boolean"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT2" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTIDENTEVT2" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Data∈DataSet ∖ {invalid}" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#7|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Ack=f" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#7|org.eventb.core.guard#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="SenderGetAck/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT3"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="f=f⇒f=f" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#SenderGetAck\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SenderGetAck/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT3"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="f=t⇒f=t" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#&gt;"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#&gt;"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#SenderGetAck\/inv13\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SenderGetAck/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT3"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="invalid≠invalid⇒f=t" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#SenderGetAck\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SenderGetAck/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTALLHYPEVT3"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="invalid=invalid⇒f=f" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#="/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#="/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poSequent#SenderGetAck\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT3" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="36">
+<org.eventb.core.poIdentifier name="Data'" org.eventb.core.type="DataSet"/>
+<org.eventb.core.poIdentifier name="SenderWaitingForACK'" org.eventb.core.type="Boolean"/>
+<org.eventb.core.poIdentifier name="Ack'" org.eventb.core.type="Boolean"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT3" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#EVTIDENTEVT3" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="SenderWaitingForACK=t" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#8|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Data≠invalid" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#8|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Ack=t" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.event#8|org.eventb.core.guard#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/ABussinessProtocol/SendAndAck One Channel.bpo|org.eventb.core.poFile#SendAndAck One Channel|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Ack∈Boolean" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#;"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="SenderWaitingForACK∈Boolean" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#-"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Data∈DataSet" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#."/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#2"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="Ack=t⇒SenderWaitingForACK=t" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#&gt;"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="Data≠invalid⇒SenderWaitingForACK=t" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#3"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="Data=invalid⇒SenderWaitingForACK=f" org.eventb.core.source="/ABussinessProtocol/SendAndAck One Channel.bum|org.eventb.core.machineFile#SendAndAck One Channel|org.eventb.core.invariant#="/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,1861 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="t≠f">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t=f">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="t≠f">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t=f">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="t≠f">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0=0∨0=0+1"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t=f">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=f⇒f=f"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="t≠f">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t=f">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderSend/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2,p1" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p9">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.hyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p8"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Ack∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="t=f⇒Ack=f"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="Ack=f"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="t=f"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Data∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+<org.eventb.core.prIdent name="Data" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="SenderWaitingForACK=f"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ReceiverReceive/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1,p9" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p1,p11" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p13">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13,p15" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p16,p10" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with SenderWaitingForACK=t" org.eventb.core.prHyps="p8">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.hyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p14"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="Ack=f">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="Valid=t∧Ack=t⇒SendMsgNo=RecvMsgNo">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="t=f"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="SenderWaitingForACK=f"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Valid=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="SenderWaitingForACK=f⇒t=f"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Ack∈Boolean">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Valid∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Valid=t"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Ack=f⇒SendMsgNo=RecvMsgNo+1">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="SendMsgNo=RecvMsgNo+1">
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Ack=t⇒SendMsgNo=RecvMsgNo">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ReceiverReceive/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8" org.eventb.core.prSets="Boolean">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p4,p6" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p7,p8,p1,p3,p4,p9,p15">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Invalid∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="Invalid" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SendMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="RecvMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="RecvMsgNo+1∈ℕ"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="Ack∈DataSet">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="SendMsgNo=RecvMsgNo∨SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Valid∈Boolean"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Boolean={t,f}"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Valid=t"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="fail∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="SenderWaitingForACK∈Boolean"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ReceiverReceive/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="Boolean">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p14">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p6,p9" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p6,p12" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p6,p3" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p4,p10,p11,p1,p7,p2,p5,p6,p13,p18,p19,p20">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ack=t⇒Valid=f"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Valid=t∧Ack=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="SendMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="RecvMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Valid=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="SendMsgNo=RecvMsgNo+1∨SendMsgNo=(RecvMsgNo+1)+1"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="Ack∈Boolean"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="SendMsgNo=RecvMsgNo∨SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Valid∈Boolean"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="SendMsgNo=RecvMsgNo+1∨SendMsgNo=RecvMsgNo+1+1"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Boolean={t,f}"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Valid=t"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="SenderWaitingForACK∈Boolean"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="Ack=t⇒SendMsgNo=RecvMsgNo"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderSend/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.prSets="Boolean">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1,p4" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with SendMsgNo=RecvMsgNo" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p16">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p17">
+<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="p3,p9,p8,p2,p7,p6,p1,p10,p16">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Valid=f"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Invalid∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="Invalid" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="SendMsgNo+1∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="SenderWaitingForACK=f"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="RecvMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="SendMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="RecvMsgNo+1∈ℕ"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Ack∈DataSet">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="SendMsgNo=RecvMsgNo∨SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="Valid∈Boolean"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Boolean={t,f}"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="fail∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="SenderWaitingForACK∈Boolean"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="SendMsgNo=RecvMsgNo"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderSend/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8,p9" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1,p2" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p10,p12" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Valid=f" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with SendMsgNo=RecvMsgNo" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p11">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p18">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p15,p14"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p19">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p19" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Valid=f"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="SendMsgNo+1=RecvMsgNo∨SendMsgNo+1=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="RecvMsgNo=RecvMsgNo∨RecvMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Ack=f">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="RecvMsgNo+1=RecvMsgNo∨RecvMsgNo+1=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="t≠f">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="SenderWaitingForACK=f">
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Valid=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Ack∈Boolean">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="f=t⇒SendMsgNo=RecvMsgNo+1">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="SendMsgNo=RecvMsgNo∨SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="f=t⇒RecvMsgNo=RecvMsgNo+1">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Valid=t⇒SendMsgNo=RecvMsgNo+1">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Valid∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬t=f">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="SendMsgNo=RecvMsgNo"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderGetACK/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=f⇒f=f"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="t≠f">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t=f">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=t⇒f=t"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t=f"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderSend/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="t=t⇒t=t"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="t≠f">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t=f">
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ReceiverReceive/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1,p9" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p1,p11" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p13">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.hyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p8"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="Valid=t∧Ack=t⇒SendMsgNo=RecvMsgNo">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Valid=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="f=t"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Ack∈Boolean">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Valid∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Valid=t"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Ack=f⇒SendMsgNo=RecvMsgNo+1">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Ack=t⇒SendMsgNo=RecvMsgNo">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderGetACK/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1,p9" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8,p11" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p13">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p13,p16" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Ack=t" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p17" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Valid=f" org.eventb.core.prHyps="p8">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.hyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p14"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="Valid=f"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ack=t⇒Valid=f"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Valid=t∧Ack=t⇒SendMsgNo=RecvMsgNo">
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t">
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="Valid=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1">
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="Valid=t⇒f=t"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="f=t"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Ack∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="t=f⇒SendMsgNo=RecvMsgNo+1">
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Valid=t⇒SendMsgNo=RecvMsgNo">
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Valid∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo">
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Valid=t"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="Ack=f⇒SendMsgNo=RecvMsgNo+1">
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="SendMsgNo=RecvMsgNo">
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=t⇒f=f"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t=f"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderSend/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2,p1" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p9">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Ack=f" org.eventb.core.prHyps="p8">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with f=t" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p12">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p16">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p2,p14,p8"/>
+<org.eventb.core.prHypAction name="SELECT3" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p17">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p17" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="Ack=t⇒Data=f">
+<org.eventb.core.prIdent name="Data" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="t=t"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="Ack=f"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Data=t">
+<org.eventb.core.prIdent name="Data" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="Ack=t⇒t=f"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Data∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+<org.eventb.core.prIdent name="Data" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="t=f"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="SenderWaitingForACK=f"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="f=t"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="Data=f">
+<org.eventb.core.prIdent name="Data" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Ack∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ReceiverReceive/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="t=t⇒f=f"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t=f"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderGetACK/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1,p9" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8,p11" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p13">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.hyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p8"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="Valid=f"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ack=t⇒Valid=f"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Valid=t∧Ack=t⇒SendMsgNo=RecvMsgNo">
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="f=t"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=t⇒Valid=f"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Ack∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Valid=t⇒SendMsgNo=RecvMsgNo">
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Valid∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo">
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="SendMsgNo=RecvMsgNo">
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="t≠f">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=f⇒0=0"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t=f">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderSend/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="Boolean">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8,p6" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1,p11" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="p18">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with SendMsgNo=RecvMsgNo" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="p17">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p20">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p20" org.eventb.core.prHyps="p4,p9,p10,p3,p5,p2,p8,p1,p12,p16,p17,p18">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Data" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ack=t⇒Data=f"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="Ack=f"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="t=f"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Data∈Boolean"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="SenderWaitingForACK=f"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="SendMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="RecvMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="Ack∈Boolean"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Data=f"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="t=f⇒SendMsgNo+1=RecvMsgNo"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="SendMsgNo=RecvMsgNo∨SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="SendMsgNo+1=RecvMsgNo"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Boolean={t,f}"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Data=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="Data=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="SenderWaitingForACK∈Boolean"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="RecvMsgNo+1=RecvMsgNo"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ReceiverReceive/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="Boolean">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p13">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p4,p6" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p4,p3" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Data=t" org.eventb.core.prHyps="p4">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p5,p11,p10,p2,p7,p1,p9,p4,p12,p17,p18,p19">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Data" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Ack=t⇒Data=f"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Data=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Data=t"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="Data∈Boolean"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="RecvMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="SendMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Ack∈Boolean"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="SendMsgNo=RecvMsgNo∨SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Boolean={t,f}"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="t=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Data=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Data=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="SenderWaitingForACK∈Boolean"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="SendMsgNo=RecvMsgNo+1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderGetACK/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p6">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2,p10" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p1,p12" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.hyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p6"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Ack=t⇒Data=f">
+<org.eventb.core.prIdent name="Data" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="Data∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+<org.eventb.core.prIdent name="Data" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="SenderWaitingForACK=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="Ack∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="Data=f">
+<org.eventb.core.prIdent name="Data" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="SenderWaitingForACK=t∧Ack=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="SenderWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="SendMsgNo=RecvMsgNo"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv12/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="Boolean" org.eventb.core.psManual="true">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p4">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="p1,p3">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬f=t"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Boolean={t,f}"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="invalid∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="invalid" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="fail∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=t∧f=f⇒0=0+1"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ack∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=t∧f=t⇒0=0"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t=f"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderSend/inv12/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.psManual="true">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p12,p13" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1,p2" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14,p16" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p14">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Valid=f" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p17" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with SendMsgNo=RecvMsgNo" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p15">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p21">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p19" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p21" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p22">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p22" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Valid=f"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="t=t∧Ack=f⇒SendMsgNo+1=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="Ack=f"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="invalid∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="invalid" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="SenderWaitingForACK=f">
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="Valid=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="ack∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="ack" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Ack∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="f=t⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="RecvMsgNo+1=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="f=t⇒RecvMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="SendMsgNo+1=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="Valid=t⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Valid∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="fail∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f">
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="SenderWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Ack=f⇒SendMsgNo+1=RecvMsgNo+1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderSend/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="Boolean">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p12">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7,p5" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1,p4" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p16,p8" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p20" org.eventb.core.prHyps="p19">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p19,p22" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Valid=f" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p18" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p23" org.eventb.core.prInfHyps="p25"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p18,p23"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Ack=f" org.eventb.core.prHyps="p16">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p19" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p26,p24" org.eventb.core.prInfHyps="p27"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with SendMsgNo=RecvMsgNo" org.eventb.core.prGoal="p20" org.eventb.core.prHyps="p17">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p29">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p27" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p27"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with f=t" org.eventb.core.prHyps="p26">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p30"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p31"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p7,p1,p16"/>
+<org.eventb.core.prHypAction name="SELECT3" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p32"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p29" org.eventb.core.prHyps="p3,p9,p10,p2,p7,p1,p11,p16,p17,p19,p26,p27,p28,p30,p31">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Ack=t⇒SendMsgNo+1=RecvMsgNo"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Valid=f"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="t=t∧Ack=t⇒SendMsgNo+1=RecvMsgNo"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="f=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK=f"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="SendMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="Valid=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="Ack∈Boolean"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="f=t⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="Valid=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="Valid=t⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Boolean={t,f}"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="Valid=t"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="RecvMsgNo+1=RecvMsgNo"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="Ack=f"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="Ack=t⇒Valid=f"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="Valid=t∧Ack=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="RecvMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="f=t"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="SendMsgNo=RecvMsgNo∨SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Valid∈Boolean"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="SendMsgNo+1=RecvMsgNo"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="SenderWaitingForACK∈Boolean"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="RecvMsgNo=RecvMsgNo+1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ReceiverReceive/inv12/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="Boolean">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p14">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p6,p9" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p6,p12" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p6,p3" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p23" org.eventb.core.prHyps="p21,p22">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with f=t" org.eventb.core.prHyps="p21">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p19" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p22" org.eventb.core.prInfHyps="p25"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p19,p22"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p23" org.eventb.core.prHyps="p4,p10,p11,p1,p7,p2,p5,p6,p13,p18,p19,p20,p21,p22,p24">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="Ack=t⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="f=t∧t=f⇒SendMsgNo=RecvMsgNo+1+1"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="t=f"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Valid=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="SendMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="Ack∈Boolean"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Boolean={t,f}"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Valid=t"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=t∧t=f⇒SendMsgNo=(RecvMsgNo+1)+1"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="t=t"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Valid=t∧Ack=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ack=t⇒Valid=f"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="RecvMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="f=t"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="SendMsgNo=RecvMsgNo∨SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Valid∈Boolean"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="SendMsgNo=RecvMsgNo+1+1"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="SenderWaitingForACK∈Boolean"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="Ack=t⇒SendMsgNo=RecvMsgNo"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ReceiverReceive/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="Boolean">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p14">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p6,p9" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p6,p12" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p6,p3" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p22" org.eventb.core.prHyps="p21">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with f=t" org.eventb.core.prHyps="p21">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p19" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p22" org.eventb.core.prHyps="p4,p10,p11,p1,p7,p2,p5,p6,p13,p18,p19,p20,p21,p23">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="Ack=t⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ack=t⇒Valid=f"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Valid=t∧Ack=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=t∧t=t⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="SendMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="RecvMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Valid=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="f=t"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="Ack∈Boolean"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="f=t⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="SendMsgNo=RecvMsgNo∨SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Valid∈Boolean"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Boolean={t,f}"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Valid=t"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="SenderWaitingForACK∈Boolean"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="Ack=t⇒SendMsgNo=RecvMsgNo"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderGetACK/inv12/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p7">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1,p12" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p11,p3" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p15">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p15,p4" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Ack=t" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p18" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Valid=f" org.eventb.core.prHyps="p11">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with SendMsgNo=RecvMsgNo" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p14">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p22">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p19" org.eventb.core.prInfHyps="p21"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with f=t" org.eventb.core.prHyps="p20">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p21" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p11,p21"/>
+<org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p23" org.eventb.core.prInfHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.hyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p22" org.eventb.core.prHyps="p22"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="t=t⇒RecvMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="Valid=f"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ack=t⇒Valid=f"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Valid=t∧Ack=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t">
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Valid=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="f=t"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Ack∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="t=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Valid=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="Valid=t⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="Valid∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="t=f⇒RecvMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Valid=t"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="SenderWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="Valid=t∧f=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="RecvMsgNo=RecvMsgNo+1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderGetACK/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prInfHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1,p10" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9,p3" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p13,p14">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.hyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p12"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Valid=f"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ack=t⇒Valid=f"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Valid=t∧Ack=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="Valid=t∧f=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="f=t"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="Ack∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="Valid=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Valid∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Valid=t"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="SenderWaitingForACK∈Boolean">
+<org.eventb.core.prIdent name="Boolean" org.eventb.core.type="ℙ(Boolean)"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="SendMsgNo=RecvMsgNo"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv14/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="t≠f">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=f⇒0=0"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬t=f">
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+</org.eventb.core.prPred>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="SenderSend/inv14/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.prSets="Boolean">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1,p4" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p17">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with SendMsgNo=RecvMsgNo" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p16">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p19">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="p3,p8,p9,p2,p6,p7,p1,p10,p16,p17">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="Valid=f"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Invalid∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="Invalid" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="t=f"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK=f"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="SendMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="RecvMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Ack∈DataSet">
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="DataSet"/>
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="t=f⇒SendMsgNo+1=RecvMsgNo"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="SendMsgNo=RecvMsgNo∨SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="SendMsgNo+1=RecvMsgNo"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="Valid∈Boolean"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Boolean={t,f}"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="fail∈DataSet">
+<org.eventb.core.prIdent name="DataSet" org.eventb.core.type="ℙ(DataSet)"/>
+<org.eventb.core.prIdent name="fail" org.eventb.core.type="DataSet"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="SenderWaitingForACK∈Boolean"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="RecvMsgNo+1=RecvMsgNo"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ReceiverReceive/inv14/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="Boolean">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewritesL2:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p14">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.typeRewrites:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoImpE" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="auto ImpE" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p6,p9" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p6,p12" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p6,p3" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq:1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Valid=t" org.eventb.core.prHyps="p6">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p21"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML:0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p4,p10,p11,p1,p7,p2,p5,p6,p13,p18,p19,p20,p21">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Ack" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="RecvMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SendMsgNo" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="SenderWaitingForACK" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="Valid" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="f" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prIdent name="t" org.eventb.core.type="Boolean"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ack=t⇒Valid=f"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Valid=t∧Ack=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="t≠f"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="SendMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="RecvMsgNo∈ℕ"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Valid=t∧Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="Ack∈Boolean"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="f=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="SendMsgNo=RecvMsgNo∨SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Valid∈Boolean"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="Boolean={t,f}"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Valid=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="t=f⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="Valid=t"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SenderWaitingForACK=f⇒Ack=f"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="Ack=f⇒SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬t=f"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="SenderWaitingForACK∈Boolean"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="Ack=t⇒SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="SendMsgNo=RecvMsgNo+1"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

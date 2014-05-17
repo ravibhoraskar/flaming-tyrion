@@ -1,0 +1,160 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[top=3cm, bottom=2.5cm, left=3cm, right=2.5cm] {geometry}
+\usepackage {bsymb,b2latex}
+\usepackage{fancyhdr,lastpage,color}
+\lhead{\rm An Event-B Specification of m00~States~and~Transitions}
+\rhead {\rm Page \thepage~of \pageref{LastPage}}
+\lfoot{}\cfoot{}\rfoot{}
+\pagestyle{fancy}
+%---------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+\begin{description}
+\BTitle{m00~States~and~Transitions}{11 Apr 2011}{08:17:55 PM}
+\MACHINE{m00~States~and~Transitions}
+\cmt{ Abstract Model. State Transitions only }
+\SEES{Context\_0}
+\VARIABLES
+	\begin{description}
+		\Item{ buy\_state }
+		\bcmt{ Sender's state }
+		\Item{ sell\_state }
+		\bcmt{ Receiver's state }
+	\end{description}
+\INVARIANTS
+	\begin{description}
+		\nItemX{ inv1 }{ buy\_state\in STATUS }
+		\nItemX{ inv2 }{ sell\_state\in STATUS }
+	\end{description}
+\EVENTS
+	\INITIALISATION
+		\begin{description}
+		\BeginAct
+			\begin{description}
+			\nItemX{ act1 }{ buy\_state:= init }
+			\nItemX{ act2 }{ sell\_state:= init }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Done}
+	\cmt{ This is the event that is called when the protocol finishes }
+		\Status{anticipated}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ buy\_state\in \{ success,failure\}  }
+			\nItemX{ grd2 }{ sell\_state\in \{ success,failure\}  }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\Item{ skip }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Begin}
+		\Status{anticipated}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ buy\_state=init }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ buy\_state:= free\_game }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Begin}
+		\Status{anticipated}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ sell\_state=init }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ sell\_state:= free\_game }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Fail}
+		\Status{anticipated}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ buy\_state\in \{ init,free\_game,last\_prop\} 	 }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ buy\_state:= failure }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Fail}
+		\Status{anticipated}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ sell\_state\in \{ init,free\_game,last\_prop\}  }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ sell\_state:= failure }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Lastprop}
+		\Status{anticipated}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ buy\_state=free\_game }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ buy\_state:= last\_prop }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Lastprop}
+		\Status{anticipated}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ sell\_state=free\_game }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ sell\_state:= last\_prop }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Buyer\_Succeed}
+		\Status{anticipated}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ buy\_state=last\_prop }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ buy\_state:= success }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {Seller\_Succeed}
+		\Status{anticipated}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItemX{ grd1 }{ sell\_state=last\_prop }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItemX{ act1 }{ sell\_state:= success }
+			\end{description}
+		\EndAct
+		\end{description}
+\END
+\end{description}
+\end{document}

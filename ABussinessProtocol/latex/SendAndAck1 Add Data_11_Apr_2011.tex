@@ -1,0 +1,96 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[top=3cm, bottom=2.5cm, left=3cm, right=2.5cm] {geometry}
+\usepackage {bsymb,b2latex}
+\usepackage{fancyhdr,lastpage,color}
+\lhead{\rm An Event-B Specification of SendAndAck1~Add~Data}
+\rhead {\rm Page \thepage~of \pageref{LastPage}}
+\lfoot{}\cfoot{}\rfoot{}
+\pagestyle{fancy}
+%---------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+\begin{description}
+\BTitle{SendAndAck1~Add~Data}{11 Apr 2011}{08:17:15 PM}
+\MACHINE{SendAndAck1~Add~Data}
+\cmt{ Adding the Data Channel }
+\REFINES{SendAndAck}
+\SEES{SendAck~context}
+\VARIABLES
+	\begin{description}
+		\Item{ SenderWaitingForACK }
+		\Item{ SendMsgNo }
+		\Item{ RecvMsgNo }
+		\Item{ Valid }
+		\Item{ Ack }
+		\Item{ Data }
+		\bcmt{ The Data Channel }
+	\end{description}
+\INVARIANTS
+	\begin{description}
+		\nItemX{ inv1 }{ Data\in DataSet }
+	\end{description}
+\EVENTS
+	\INITIALISATION
+		\\\textit{extended}
+		\begin{description}
+		\BeginAct
+			\begin{description}
+			\nItem{ act1 }{ SenderWaitingForACK:= f }
+			\nItem{ act2 }{ SendMsgNo:= 0 }
+			\nItem{ act3 }{ RecvMsgNo:= 0 }
+			\nItem{ act4 }{ Valid:= f }
+			\nItem{ act5 }{ Ack:= f }
+			\nItemX{ act6 }{ Data:\in DataSet }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {SenderSend}
+	\EXTD {SenderSend}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ SenderWaitingForACK=f }
+			\nItem{ grd2 }{ Valid=f }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ SenderWaitingForACK:= t }
+			\nItem{ act2 }{ Valid:= t }
+			\nItem{ act3 }{ SendMsgNo:= SendMsgNo+1 }
+			\nItemX{ act4 }{ Data:\in DataSet }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {ReceiverReceive}
+	\EXTD {ReceiverReceive}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ Valid=t }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ Valid:= f }
+			\nItem{ act2 }{ Ack:= t }
+			\nItem{ act3 }{ RecvMsgNo:= RecvMsgNo+1 }
+			\end{description}
+		\EndAct
+		\end{description}
+	\EVT {SenderGetACK}
+	\EXTD {SenderGetACK}
+		\begin{description}
+		\WhenGrd
+			\begin{description}
+			\nItem{ grd1 }{ SenderWaitingForACK=t }
+			\nItem{ grd2 }{ Ack=t }
+			\end{description}
+		\ThenAct
+			\begin{description}
+			\nItem{ act1 }{ Ack:= f }
+			\nItem{ act2 }{ SenderWaitingForACK:= f }
+			\end{description}
+		\EndAct
+		\end{description}
+\END
+\end{description}
+\end{document}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.comment="Introducing the Channel from the Buyer to Seller" org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="m02 Convergence of Seller Events"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Context_0"/>
+<org.eventb.core.variable name=")" org.eventb.core.comment="Sender's state" org.eventb.core.identifier="buy_state"/>
+<org.eventb.core.variable name="*" org.eventb.core.comment="Receiver's state" org.eventb.core.identifier="sell_state"/>
+<org.eventb.core.variable name="6" org.eventb.core.comment="This is a number that is the variant for the state that the machine is in. The value set by the event is determined by a topological sort on the FSM" org.eventb.core.identifier="buyer_variant"/>
+<org.eventb.core.variable name="7" org.eventb.core.comment="" org.eventb.core.identifier="seller_variant"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="Data≔invalid" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="BuyerWaitingForACK≔f" org.eventb.core.label="act6"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Ack≔f" org.eventb.core.label="act7"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="-" org.eventb.core.comment="This is the event that is called when the protocol finishes" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Done">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Done"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="S" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Buyer_Send_Begin">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="buy_state=init"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data=invalid"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="BuyerWaitingForACK=f"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Data≔begin" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="BuyerWaitingForACK≔t" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Seller_Begin">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Seller_Begin"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data=begin"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="Ack=f"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Ack≔t" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Buyer_Begin">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Buyer_Begin"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data=begin"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd4" org.eventb.core.predicate="BuyerWaitingForACK=t"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Data≔invalid" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="Ack≔f" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="BuyerWaitingForACK≔f" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="9" org.eventb.core.comment="The Data Channel (visible to sender and receiver)" org.eventb.core.identifier="Data"/>
+<org.eventb.core.invariant name="E" org.eventb.core.comment="Invariant from the SendAndAck Design Pattern" org.eventb.core.label="inv1" org.eventb.core.predicate="Ack∈Boolean"/>
+<org.eventb.core.invariant name=":" org.eventb.core.comment="Invariant from the SendAndAck Design Pattern" org.eventb.core.label="inv2" org.eventb.core.predicate="Data∈DataSet&#9;"/>
+<org.eventb.core.invariant name="&gt;" org.eventb.core.comment="Invariant from the SendAndAck Design Pattern" org.eventb.core.label="inv3" org.eventb.core.predicate="BuyerWaitingForACK∈Boolean"/>
+<org.eventb.core.invariant name="?" org.eventb.core.comment="Invariant from the SendAndAck Design Pattern" org.eventb.core.label="inv4" org.eventb.core.predicate="BuyerWaitingForACK=f ⇒ Ack=f"/>
+<org.eventb.core.invariant name="F" org.eventb.core.comment="Invariant from the SendAndAck Design Pattern" org.eventb.core.label="inv5" org.eventb.core.predicate="Ack=t⇒BuyerWaitingForACK=t"/>
+<org.eventb.core.invariant name="G" org.eventb.core.comment="Invariant from the SendAndAck Design Pattern" org.eventb.core.label="inv6" org.eventb.core.predicate="Data≠invalid ⇒BuyerWaitingForACK=t"/>
+<org.eventb.core.seesContext name=";" org.eventb.core.target="SendAck context"/>
+<org.eventb.core.variable name="D" org.eventb.core.comment="The Ack Channel (visible to sender and receiver)" org.eventb.core.identifier="Ack"/>
+<org.eventb.core.variable name="=" org.eventb.core.identifier="BuyerWaitingForACK"/>
+<org.eventb.core.invariant name="H" org.eventb.core.comment="Invariant from the SendAndAck Design Pattern" org.eventb.core.label="inv7" org.eventb.core.predicate="Data=invalid⇒BuyerWaitingForACK=f"/>
+<org.eventb.core.invariant name="I" org.eventb.core.comment="Captures requirement. Buyer enters failure state only after seller has already done so" org.eventb.core.label="inv8" org.eventb.core.predicate="buy_state=failure⇒sell_state=failure"/>
+<org.eventb.core.invariant name="J" org.eventb.core.comment="Invariant added to enable Buyer_Fail/inv8/INV to go through" org.eventb.core.label="inv9" org.eventb.core.predicate="Data=fail∧Ack=t⇒sell_state=failure"/>
+<org.eventb.core.invariant name="K" org.eventb.core.comment="Captures requirement. Buyer enters succeed state only after seller has already done so" org.eventb.core.label="inv10" org.eventb.core.predicate="buy_state=success⇒sell_state=success"/>
+<org.eventb.core.invariant name="L" org.eventb.core.comment="Invariant added to enable Buyer_Succeed/inv10/INV to go through" org.eventb.core.label="inv11" org.eventb.core.predicate="Data=succeed∧Ack=t⇒sell_state=success"/>
+<org.eventb.core.invariant name="O" org.eventb.core.comment="Captures requirement. Buyer enters free game state when seller has already done so" org.eventb.core.label="inv12" org.eventb.core.predicate="buy_state=free_game∧Data≠fail∧Data≠last_proposal⇒sell_state=free_game"/>
+<org.eventb.core.invariant name="R" org.eventb.core.comment="Invariant added to enable Buyer_Begin/inv12/INV to go through" org.eventb.core.label="inv15" org.eventb.core.predicate="Data=begin∧Ack=t⇒sell_state=free_game"/>
+<org.eventb.core.invariant name="P" org.eventb.core.comment="Captures requirement. Buyer enters last proposal state when seller has already done so" org.eventb.core.label="inv13" org.eventb.core.predicate="buy_state=last_prop∧Data≠fail∧Data≠succeed⇒sell_state=last_prop"/>
+<org.eventb.core.invariant name="Q" org.eventb.core.comment="Invariant added to enable Buyer_Lastprop/inv13/INV to go through" org.eventb.core.label="inv14" org.eventb.core.predicate="Data=last_proposal∧Ack=t⇒sell_state=last_prop"/>
+<org.eventb.core.event name="8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Buyer_Send_Fail">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="buy_state∈{init,free_game,last_prop}"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="Data≔fail" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="BuyerWaitingForACK≔t" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="Data=invalid"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd4" org.eventb.core.predicate="BuyerWaitingForACK=f"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Seller_Fail">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Seller_Fail"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data=fail"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Ack≔t" org.eventb.core.label="act3"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="Ack=f"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Buyer_Fail">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Buyer_Fail"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data=fail"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Ack≔f" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Data≔invalid" org.eventb.core.label="act4"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd4" org.eventb.core.predicate="BuyerWaitingForACK=t"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="BuyerWaitingForACK≔f" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="M" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Buyer_Send_Succeed">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="buy_state=last_prop"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data=invalid"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="BuyerWaitingForACK=f"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Data≔succeed" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="BuyerWaitingForACK≔t" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Seller_Succeed">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Seller_Succeed"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data=succeed"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="Ack=f"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Ack≔t" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Buyer_Succeed">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Buyer_Succeed"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data=succeed"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd4" org.eventb.core.predicate="BuyerWaitingForACK=t"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Data≔invalid" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="Ack≔f" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="BuyerWaitingForACK≔f" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="N" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Buyer_Send_LastProp">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="buy_state=free_game"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data=invalid"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="BuyerWaitingForACK=f"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Data≔last_proposal" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="BuyerWaitingForACK≔t" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Seller_Lastprop">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Seller_Lastprop"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data=last_proposal"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="Ack=f"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Ack≔t" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Buyer_Lastprop">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Buyer_Lastprop"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Data=last_proposal"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd4" org.eventb.core.predicate="BuyerWaitingForACK=t"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Data≔invalid" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="Ack≔f" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="BuyerWaitingForACK≔f" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="T" org.eventb.core.comment="Buyer sends something and waits for ack, during free game state" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Buyer_Send_Stuff">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Data=invalid"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="buy_state=free_game"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Data:∈DataDataSet&#9;" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="BuyerWaitingForACK≔t" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="U" org.eventb.core.comment="Seller sends the Ack for the buyer's message in the free game state" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Seller_Get_Stuff">
+<org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="sell_state=free_game"/>
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Data∈DataDataSet"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Ack=f"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Ack≔t" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="V" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Buyer_Get_Ack_for_Stuff">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="BuyerWaitingForACK=t"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="buy_state=free_game"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="Data∈DataDataSet"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd4" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="BuyerWaitingForACK≔f" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="Data≔invalid" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="Ack≔f" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="W" org.eventb.core.comment="Non-Control messages can only be sent in the free game state" org.eventb.core.label="inv16" org.eventb.core.predicate="Data∈DataDataSet⇒(buy_state=free_game∧sell_state=free_game)"/>
+</org.eventb.core.machineFile>

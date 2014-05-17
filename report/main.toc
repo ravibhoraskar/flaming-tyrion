@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Problem Specification}{2}{section.2}
+\contentsline {section}{\numberline {3}Requirements Document}{3}{section.3}
+\contentsline {section}{\numberline {4}Design Patterns}{3}{section.4}
+\contentsline {section}{\numberline {5}Refinement Strategy}{4}{section.5}
+\contentsline {subsection}{\numberline {5.1}Refinement Strategy for the Design Pattern}{4}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Refinement Strategy for the Bussiness Protocol}{4}{subsection.5.2}
+\contentsline {section}{\numberline {6}Personal comments, insights and lessons learnt}{5}{section.6}
+\contentsline {section}{\numberline {7}The Rodin Models}{6}{section.7}
+\contentsline {subsection}{\numberline {7.1}Refinements for the Design Pattern}{6}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Refinements for the Business Protocol}{9}{subsection.7.2}

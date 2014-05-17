@@ -1,0 +1,74 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[top=3cm, bottom=2.5cm, left=3cm, right=2.5cm] {geometry}
+\usepackage {bsymb,b2latex}
+\usepackage{fancyhdr,lastpage,color}
+\lhead{\rm An Event-B Specification of SendAck~context}
+\rhead {\rm Page \thepage~of \pageref{LastPage}}
+\lfoot{}\cfoot{}\rfoot{}
+\pagestyle{fancy}
+%---------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+\begin{description}
+\BTitle{SendAck~context}{11 Apr 2011}{08:17:08 PM}
+\CONTEXT{SendAck~context}
+\cmt{ The context seen by machines which send and receive messages }
+\SETS
+	\begin{description}
+		\Item{ Boolean }
+		\bcmt{ A Boolean Set. Contains 'true' and 'false'	 }
+		\Item{ DataSet }
+		\bcmt{ The values which the Data Channel can take }
+	\end{description}
+\CONSTANTS
+	\begin{description}
+		\Item{ t }
+		\bcmt{ True }
+		\Item{ f }
+		\bcmt{ False }
+		\Item{ fail }
+		\bcmt{ Message saying 'fail' }
+		\Item{ invalid }
+		\bcmt{ Data channel is empty }
+		\Item{ succeed }
+		\bcmt{ Message saying 'succeed' }
+		\Item{ last\_proposal }
+		\bcmt{ Message saying 'go to last\_prop state' }
+		\Item{ begin }
+		\bcmt{ Message saying 'go to free\_game state' }
+		\Item{ DataDataSet }
+		\bcmt{ This is the subset of DataSet that consists of all messages except control messages }
+	\end{description}
+\AXIOMS
+	\begin{description}
+		\nItemX{ axm1 }{ Boolean=\{ t,f\}  }
+		\cmt{ Definition of Boolean }
+		\nItemX{ axm2 }{ t\neq f }
+		\cmt{ Definition of Boolean }
+		\nItemX{ axm3 }{ fail\in DataSet }
+		\nItemX{ axm10 }{ succeed\in DataSet }
+		\nItemX{ axm5 }{ invalid\in DataSet }
+		\nItemX{ axm14 }{ last\_proposal\in DataSet }
+		\nItemX{ axm19 }{ begin\in DataSet }
+		\nItemX{ axm7 }{ fail\neq invalid }
+		\nItemX{ axm11 }{ succeed\neq invalid }
+		\nItemX{ axm13 }{ succeed\neq fail }
+		\nItemX{ axm15 }{ last\_proposal\neq fail }
+		\nItemX{ axm17 }{ last\_proposal\neq invalid }
+		\nItemX{ axm18 }{ last\_proposal\neq succeed }
+		\nItemX{ axm20 }{ begin\neq fail }
+		\nItemX{ axm21 }{ begin\neq invalid }
+		\nItemX{ axm22 }{ begin\neq succeed }
+		\nItemX{ axm23 }{ begin\neq last\_proposal }
+		\nItemX{ axm9 }{ DataSet \setminus  \{ invalid\} \neq \emptyset  }
+		\cmt{ The Dataset contains some valid things }
+		\nItemX{ axm24 }{ DataDataSet\subseteq DataSet }
+		\cmt{ Definition of DataDataSet }
+		\nItemX{ axm25 }{ DataDataSet=DataSet\setminus \{ fail,succeed,invalid,last\_proposal,begin\}  }
+		\cmt{ Definition of DataDataSet }
+		\nItemX{ axm26 }{ DataDataSet\neq \emptyset  }
+		\cmt{ There exist messages other than control messages }
+	\end{description}
+\END
+\end{description}
+\end{document}

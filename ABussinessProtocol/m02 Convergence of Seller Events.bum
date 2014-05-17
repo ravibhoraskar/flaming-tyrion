@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="m01 Convergence of Buyer Events"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Context_0"/>
+<org.eventb.core.variable name=")" org.eventb.core.comment="Sender's state" org.eventb.core.identifier="buy_state"/>
+<org.eventb.core.variable name="*" org.eventb.core.comment="Receiver's state" org.eventb.core.identifier="sell_state"/>
+<org.eventb.core.variable name="6" org.eventb.core.comment="This is a number that is the variant for the state that the machine is in. The value set by the event is determined by a topological sort on the FSM" org.eventb.core.identifier="buyer_variant"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="seller_variant≔5" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="-" org.eventb.core.comment="This is the event that is called when the protocol finishes" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Done">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Done"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Buyer_Begin">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Buyer_Begin"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="/" org.eventb.core.convergence="1" org.eventb.core.extended="true" org.eventb.core.label="Seller_Begin">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Seller_Begin"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="seller_variant≔4" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Buyer_Fail">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Buyer_Fail"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="1" org.eventb.core.convergence="1" org.eventb.core.extended="true" org.eventb.core.label="Seller_Fail">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Seller_Fail"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="seller_variant≔1" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Buyer_Lastprop">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Buyer_Lastprop"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="3" org.eventb.core.convergence="1" org.eventb.core.extended="true" org.eventb.core.label="Seller_Lastprop">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Seller_Lastprop"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="seller_variant≔3" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Buyer_Succeed">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Buyer_Succeed"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="5" org.eventb.core.convergence="1" org.eventb.core.extended="true" org.eventb.core.label="Seller_Succeed">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Seller_Succeed"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="seller_variant≔2" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="7" org.eventb.core.comment="This is a number that is the variant for the state that the machine is in. The value set by the event is determined by a topological sort on the FSM" org.eventb.core.identifier="seller_variant"/>
+<org.eventb.core.invariant name="8" org.eventb.core.comment="The variant is a natural number." org.eventb.core.label="inv1" org.eventb.core.predicate="seller_variant∈ℕ"/>
+<org.eventb.core.invariant name="9" org.eventb.core.label="inv2" org.eventb.core.predicate="sell_state=init⇒seller_variant=5"/>
+<org.eventb.core.invariant name=":" org.eventb.core.label="inv3" org.eventb.core.predicate="sell_state=free_game⇒seller_variant=4"/>
+<org.eventb.core.invariant name=";" org.eventb.core.label="inv4" org.eventb.core.predicate="sell_state=last_prop⇒seller_variant=3"/>
+<org.eventb.core.invariant name="=" org.eventb.core.label="inv5" org.eventb.core.predicate="sell_state=success⇒seller_variant=2"/>
+<org.eventb.core.invariant name="&gt;" org.eventb.core.label="inv6" org.eventb.core.predicate="sell_state=failure⇒seller_variant=1"/>
+<org.eventb.core.variant name="?" org.eventb.core.expression="seller_variant"/>
+</org.eventb.core.machineFile>

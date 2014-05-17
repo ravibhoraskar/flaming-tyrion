@@ -1,0 +1,2 @@
+\section{Refinement Strategy}
+The refinement strategy takes place at two levels. The first one is at the Design Pattern level, where we create a more and more concrete model of sending and receiving messages (the Transport Layer) through successive refinements. The second is at the Business Protocol level (the Application Layer), which uses these design patterns, and creates 

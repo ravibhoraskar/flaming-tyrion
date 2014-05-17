@@ -1,0 +1,33 @@
+\documentclass[a4wide]{article}
+\usepackage{a4wide}
+\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{a4wide}
+\usepackage{array}
+\usepackage{graphics,graphicx,color}
+\usepackage{epsfig}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{subfigure}
+\usepackage{multicol}
+
+% Title Page
+\title{A Business Protocol: Project in Event-B}
+\author{Ravi Bhoraskar}
+
+\begin{document}
+\maketitle
+Note: This report is still incomplete. The Comments section is missing. Will upload an updated one tomorrow.
+\tableofcontents
+\newpage
+\input{intro}
+\input{specification}
+\input{requirements}
+\input{designpattern}
+\input{refinement}
+\input{models}
+\input{comments}
+\bibliographystyle{acm}
+\bibliography{ref}  
+\end{document}

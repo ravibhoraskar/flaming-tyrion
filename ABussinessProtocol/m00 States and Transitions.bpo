@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
+<org.eventb.core.poIdentifier name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="init" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="last_prop" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="success" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="STATUS={init,free_game,last_prop,success,failure}" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="init≠free_game" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="init≠last_prop" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="init≠success" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="free_game≠last_prop" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#0"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="free_game≠success" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#1"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="last_prop≠success" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="failure≠init" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#3"/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="failure≠free_game" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="failure≠last_prop" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="failure≠success" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#6"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="buy_state" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="sell_state" org.eventb.core.type="STATUS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT0" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="buy_state'" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="sell_state'" org.eventb.core.type="STATUS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT0" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#EVTIDENTEVT0" org.eventb.core.poStamp="12"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT1" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="buy_state∈{success,failure}" org.eventb.core.source="/ABussinessProtocol/m00 States and Transitions.bum|org.eventb.core.machineFile#m00 States and Transitions|org.eventb.core.event#-|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="sell_state∈{success,failure}" org.eventb.core.source="/ABussinessProtocol/m00 States and Transitions.bum|org.eventb.core.machineFile#m00 States and Transitions|org.eventb.core.event#-|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT2" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="buy_state'" org.eventb.core.type="STATUS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT2" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#EVTIDENTEVT2" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="buy_state=init" org.eventb.core.source="/ABussinessProtocol/m00 States and Transitions.bum|org.eventb.core.machineFile#m00 States and Transitions|org.eventb.core.event#.|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT3" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="sell_state'" org.eventb.core.type="STATUS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT3" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#EVTIDENTEVT3" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="sell_state=init" org.eventb.core.source="/ABussinessProtocol/m00 States and Transitions.bum|org.eventb.core.machineFile#m00 States and Transitions|org.eventb.core.event#\/|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT4" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="buy_state'" org.eventb.core.type="STATUS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT4" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#EVTIDENTEVT4" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="buy_state∈{init,free_game,last_prop}" org.eventb.core.source="/ABussinessProtocol/m00 States and Transitions.bum|org.eventb.core.machineFile#m00 States and Transitions|org.eventb.core.event#0|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT5" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="sell_state'" org.eventb.core.type="STATUS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT5" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#EVTIDENTEVT5" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="sell_state∈{init,free_game,last_prop}" org.eventb.core.source="/ABussinessProtocol/m00 States and Transitions.bum|org.eventb.core.machineFile#m00 States and Transitions|org.eventb.core.event#1|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT6" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="buy_state'" org.eventb.core.type="STATUS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT6" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#EVTIDENTEVT6" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="buy_state=free_game" org.eventb.core.source="/ABussinessProtocol/m00 States and Transitions.bum|org.eventb.core.machineFile#m00 States and Transitions|org.eventb.core.event#2|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT7" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="sell_state'" org.eventb.core.type="STATUS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT7" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#EVTIDENTEVT7" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="sell_state=free_game" org.eventb.core.source="/ABussinessProtocol/m00 States and Transitions.bum|org.eventb.core.machineFile#m00 States and Transitions|org.eventb.core.event#3|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT8" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="buy_state'" org.eventb.core.type="STATUS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT8" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#EVTIDENTEVT8" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="buy_state=last_prop" org.eventb.core.source="/ABussinessProtocol/m00 States and Transitions.bum|org.eventb.core.machineFile#m00 States and Transitions|org.eventb.core.event#4|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT9" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="sell_state'" org.eventb.core.type="STATUS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT9" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#EVTIDENTEVT9" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="sell_state=last_prop" org.eventb.core.source="/ABussinessProtocol/m00 States and Transitions.bum|org.eventb.core.machineFile#m00 States and Transitions|org.eventb.core.event#5|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/ABussinessProtocol/m00 States and Transitions.bpo|org.eventb.core.poFile#m00 States and Transitions|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="buy_state∈STATUS" org.eventb.core.source="/ABussinessProtocol/m00 States and Transitions.bum|org.eventb.core.machineFile#m00 States and Transitions|org.eventb.core.invariant#+"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="sell_state∈STATUS" org.eventb.core.source="/ABussinessProtocol/m00 States and Transitions.bum|org.eventb.core.machineFile#m00 States and Transitions|org.eventb.core.invariant#,"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

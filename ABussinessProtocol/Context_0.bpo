@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="14">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="14">
+<org.eventb.core.poIdentifier name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
+<org.eventb.core.poIdentifier name="failure" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="free_game" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="init" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="last_prop" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="success" org.eventb.core.type="STATUS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/ABussinessProtocol/Context_0.bpo|org.eventb.core.poFile#Context_0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="14">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="STATUS={init,free_game,last_prop,success,failure}" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="init≠free_game" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="init≠last_prop" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="init≠success" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="free_game≠last_prop" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#0"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="free_game≠success" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#1"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="last_prop≠success" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="failure≠init" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#3"/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="failure≠free_game" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="failure≠last_prop" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="failure≠success" org.eventb.core.source="/ABussinessProtocol/Context_0.buc|org.eventb.core.contextFile#Context_0|org.eventb.core.axiom#6"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

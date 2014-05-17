@@ -1,0 +1,38 @@
+\section{Personal comments, insights and lessons learnt}
+\begin{itemize}
+\item 
+  \emph{\bf Event-B:} The Event-B platform is an excellent one for modelling various kinds of systems. In particular, with reference to this project, it is very nice 
+  when modeling network protocols, as things happen independently and asynchronously. Events capture this requirement particularly well. Another good thing about modeling 
+  in Event-B is that it makes you prove the validity of the invariants at every step. Hence, if the requirements are sufficiently well captured by the invariants, it is 
+  very likely that no mistakes will be commited.
+\item 
+  \emph{\bf Rodin:} The Rodin platform is an eclipse based platform for modeling within the Event-B framework. It allows us to
+  define the models, calculates the proof obligations and either solves them automatically using
+  external theorem provers or gives the user to manually perform the proof.~\cite{JoachimVizing} That said, we felt that a few features were missing from Rodin, such as Design Patterns.
+  However, Rodin is an Open Source tool, and is extensible through plugins, hence with time all such features can be expected to be present.
+\item 
+  \emph{\bf Proof Techniques:} In our first attempt, many proofs could not be automatically performed by the Rodin provers, even when we intuitively felt that the events 
+  should maintain them. Without modifying the events (e.g. by adding new guards), we realized that there are two ways to make the proofs go through.
+  \begin{enumerate}
+  \item Use the interactive proof mode to manually prove the theorems.
+  \item Add new redundant invariants (those which are implied by pre-existing invariants). 
+  \end{enumerate}
+  The second method above is a valid one, since we are not changing the events themselves, nor are we adding additional constrainsts to the system. We are simply giving 
+  Rodin additional information about the system (which ideally it should already know), so as to help its automatic provers do their job properly. We have extensively used 
+  this method in our project. Thus, there are a very large number of invariants that need to be proved, but most of the proofs go through with the automatic provers.  
+\item
+  \emph{\bf Personal Comments:} This is the first time we are using the Event-B framework and Rodin. Thus, in hindsight, we notice a few mistakes that a seasoned Event-B 
+  programmer would not have done. Our refinement strategy was not as smooth as the ones done in ~\cite{AbrialBook}. Abrial does the refinements in a way that at every 
+  refinement, only a very little additional thing is added. In our project, the first two refinements were relatively small, but the third one was a large jump. Several of 
+  the requirements were added to the model only in the third refinement. In hindsight, we feel that this refinement could have been broken up into two or more refinements. With more experience in this methodology, this skill shall also be learnt.
+\item
+  \emph{\bf Future Work:} A few more refinements would still be needed to complete the modeling of this project. One important thing to do which is not done is to prove 
+  \emph{Deadlock Freedom}. This can either be done by proving Deadlock Freedom in the abstract machine, and Relative Deadlock Freedom in each of the refinements; or by 
+  proving Deadlock Freedom in the final refinement. This, along with the proof of the variant, is important to show that the protocol definitely finishes.
+
+  Another thing to do is to add an unreliable channel over which the Transport Layer runs. This can be done by introducing new events, known as \emph{Demon Events}, which 
+  tamper with the data going over a channel. For more details on how this technique is used, see the chapter on Bounded Retransmission Protocol in ~\cite{AbrialBook}.
+
+Another thing left to do is to add a single communication from the seller to the buyer in the Last Proposal state. Right now, we assume that the seller sends this with the Ack. However, due to this assumption, the last message sent by the seller in this state has no Ack, and hence must be sent on trust over an unreliable channel. This will be very similar to the message sent by the seller in the free game state. Also, a new state will need to be added, since exactly one message must be sent by the seller. This will also be similar to the state transitions already done. We skip this part due to lack of time. 
+\end{itemize}
+

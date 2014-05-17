@@ -1,4 +1,6 @@
 flaming-tyrion
 ==============
 
-A Bussiness Protocol
+A Business Protocol
+
+Please see ABusinessProtocolReport.pdf for details

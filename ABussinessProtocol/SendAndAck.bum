@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.comment="Abstract model for sending a message and receiving an Ack" org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="(" org.eventb.core.assignment="SenderWaitingForACK≔f" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="SendMsgNo≔0" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="RecvMsgNo≔0" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Valid≔f" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="Ack≔f" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="(" org.eventb.core.comment="State of Sender" org.eventb.core.identifier="SenderWaitingForACK"/>
+<org.eventb.core.invariant name="5" org.eventb.core.label="inv7" org.eventb.core.predicate="Valid∈Boolean"/>
+<org.eventb.core.invariant name="4" org.eventb.core.label="inv6" org.eventb.core.predicate="Ack∈Boolean"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="SenderWaitingForACK∈Boolean"/>
+<org.eventb.core.seesContext name="+" org.eventb.core.target="SendAck context"/>
+<org.eventb.core.variable name="-" org.eventb.core.comment="Message Number seen by sender(not really required)" org.eventb.core.identifier="SendMsgNo"/>
+<org.eventb.core.variable name="." org.eventb.core.comment="Message Number seen by receiver(not really required)" org.eventb.core.identifier="RecvMsgNo"/>
+<org.eventb.core.invariant name="/" org.eventb.core.label="inv3" org.eventb.core.predicate="SendMsgNo∈ℕ"/>
+<org.eventb.core.invariant name="0" org.eventb.core.label="inv4" org.eventb.core.predicate="RecvMsgNo∈ℕ"/>
+<org.eventb.core.invariant name="1" org.eventb.core.label="inv5" org.eventb.core.predicate="SendMsgNo=RecvMsgNo ∨ SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.variable name="2" org.eventb.core.comment="Whether Data is valid or not" org.eventb.core.identifier="Valid"/>
+<org.eventb.core.variable name="3" org.eventb.core.comment="The Ack Channel" org.eventb.core.identifier="Ack"/>
+<org.eventb.core.invariant name="6" org.eventb.core.label="inv8" org.eventb.core.predicate="SenderWaitingForACK=f ⇒ Ack=f"/>
+<org.eventb.core.event name="7" org.eventb.core.comment="Sender Sends Data" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SenderSend">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="SenderWaitingForACK=f"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Valid=f"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="SenderWaitingForACK≔t" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Valid≔t" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="SendMsgNo≔SendMsgNo+1" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="8" org.eventb.core.comment="Receiver gets Data and sends ack" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ReceiverReceive">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Valid=t"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="Valid≔f" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Ack≔t" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="RecvMsgNo≔RecvMsgNo+1" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="9" org.eventb.core.comment="Receiver gets the Ack" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SenderGetACK">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="SenderWaitingForACK=t"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Ack=t"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Ack≔f" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="SenderWaitingForACK≔f" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name=":" org.eventb.core.label="inv9" org.eventb.core.predicate="Valid=t⇒SenderWaitingForACK=t"/>
+<org.eventb.core.invariant name=";" org.eventb.core.label="inv10" org.eventb.core.predicate="Ack=t⇒Valid=f"/>
+<org.eventb.core.invariant name="&gt;" org.eventb.core.label="inv12" org.eventb.core.predicate="Valid=t ∧ Ack=f ⇒ SendMsgNo=RecvMsgNo+1"/>
+<org.eventb.core.invariant name="?" org.eventb.core.label="inv13" org.eventb.core.predicate="Valid=t ∧ Ack=t ⇒ SendMsgNo=RecvMsgNo"/>
+<org.eventb.core.invariant name="@" org.eventb.core.label="inv14" org.eventb.core.predicate="Valid=f ⇒ SendMsgNo=RecvMsgNo"/>
+</org.eventb.core.machineFile>
